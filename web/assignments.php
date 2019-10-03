@@ -1,7 +1,9 @@
 <?php
     echo '
         <div>
-            <h2>Coming Soon</h2>
+            <ul>
+                <li><a href="https://cs313-projects-rays.herokuapp.com/shoppingcart/index.php">Shopping Cart</a></li>
+            </ul>
         </div>
     ';
 
