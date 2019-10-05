@@ -14,7 +14,7 @@ echo $numres;
         for($y = 0; $y < $numres;)
         {
             echo '<div>
-            <img src="./images';echo $products[$i][$y++]; 
+            <img src="./images/';echo $products[$i][$y++]; 
             echo'" alt="product image" />
             <div class="product-name">'; echo $products[$i][$y++];
             echo '</div>
@@ -23,10 +23,11 @@ echo $numres;
             <div class="price"> $'; echo $products[$i][$y++];
             echo '</div>
             <button class="add-to-cart" data-id="'; 
-            echo data_id;
+            echo $data_id;
             echo'">Add to Cart</button>
             </div>';
         }
+        $data_id++;
     }
 echo '
 </div> ';
