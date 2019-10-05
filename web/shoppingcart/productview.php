@@ -7,10 +7,10 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    $cart = [];
-    array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
+    $_SESSION["cart"] = [];
+    
+    array_push($_SESSION["cart"], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
-    $_SESSION["cart"] = $cart;
 
     foreach ($_SESSION["cart"] as $key => $value)
     {
