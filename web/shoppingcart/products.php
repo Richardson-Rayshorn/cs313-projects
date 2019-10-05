@@ -15,11 +15,11 @@ echo $numres;
         {
             echo '<div>
             <img src="" alt="product image" />
-            <div class="product-name">'; echo $product[$i][$y];
+            <div class="product-name">'; echo $products[$i][$y];
             echo '</div>
-            <div class="product-summary">'; echo $product[$i][$y];
+            <div class="product-summary">'; echo $products[$i][$y];
             echo '</div>
-            <div class="price"> $'; echo $product[$i][$y];
+            <div class="price"> $'; echo $products[$i][$y];
             echo '</div>
             <button class="add-to-cart" data-id="'; 
             echo data_id;
