@@ -1,5 +1,6 @@
 <?php include 'productlist.php'; 
-    <span> hello</span>
+    $ids = $_REQUEST["q"];
+echo $ids;
 echo '
 <div class="row">
     <div class="col s12 m12 l8">
