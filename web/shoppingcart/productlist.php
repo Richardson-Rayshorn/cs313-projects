@@ -1,8 +1,8 @@
 <?php
 
     $products = array(
-        array("Bread", "made with flour", 4),
-        array("cheese", "made with milk", 8)
+        array("/bread.jpg","Bread", "made with flour", 4),
+        array("/cheese.jpg", "cheese", "made with milk", 8)
     )
 
 ?>
