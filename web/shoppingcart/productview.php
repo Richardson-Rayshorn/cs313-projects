@@ -12,7 +12,12 @@
     array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     print_r($cart);
-    // $_SESSION["cart"] = ;
+    $_SESSION["cart"] = $cart;
+
+    foreach ($_SESSION["cart"] as $key => $value)
+    {
+        echo $key . " " . $value;
+    }
 
      for($i = 0; $i < $num; $i++)
         {
