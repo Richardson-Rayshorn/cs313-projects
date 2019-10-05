@@ -8,7 +8,7 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    session_id("productview")
+    session_id("productview");
     session_start();
 
     $_SESSION["productname"] = $_REQUEST["prodname"];
