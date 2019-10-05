@@ -9,7 +9,7 @@
     $numres = $numval / $num;
 
     $cart = [];
-    array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quantity"]);
+    array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     print_r($cart);
     // $_SESSION["cart"] = ;
