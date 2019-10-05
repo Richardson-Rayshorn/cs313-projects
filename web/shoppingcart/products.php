@@ -1,8 +1,8 @@
 <?php include 'productlist.php'; 
     
-// $num = count($products);
+$num = count($products);
 
-    echo "<span>total 2</span>";
+    echo $num . "<span>total 2</span>";
 //     echo '
 // <div class="products">'
 //     for($i = 0; )
