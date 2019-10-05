@@ -12,6 +12,10 @@ session_start();
     
     array_push($_SESSION["cart"][], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
+    foreach ($_SESSION["cart"] as $key => $value)
+    {
+        echo $key . " " . $value;
+    }
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
