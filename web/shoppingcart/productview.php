@@ -13,6 +13,10 @@
 
     $_SESSION["cart"] = $cart;
 
+    foreach ($_SESSION["cart"] as $key => $value)
+    {
+        echo $value;
+    }
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
