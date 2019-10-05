@@ -24,7 +24,7 @@ echo $numres;
             echo '</div>
             <button class="see-product" data-id="'; 
             echo $data_id;
-            echo'">See Product</button>
+            echo'" onclick="seeProduct(this)">See Product</button>
             </div>';
         }
         $data_id++;
