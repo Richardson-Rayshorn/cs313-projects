@@ -27,6 +27,7 @@ function addCart(e)
     var quantity = document.getElementById("quantity").value;
 
     alert(name + "" + price + "" + quantity);
-    // xmlhttp.open("GET", "productview.php", true);
-    // xmlhttp.send();
+    xmlhttp.open("GET", "productview.php?prodname=" + name 
+                            + "&price=" + price + "&quan=" + quantity, true);
+    xmlhttp.send();
 }
