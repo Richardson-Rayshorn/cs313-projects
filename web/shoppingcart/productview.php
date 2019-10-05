@@ -26,8 +26,8 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
                 est laborum.</p>
                 <span class="row">
-                    <p class="col s6 m6 l6" id="price">Price : $0.00</p>
-                    <p class="col s6 m6 l6" id="quantity">Quantity : <input type="number" value="1" min="1" max="25"> </p>
+                    <p class="col s6 m6 l6">Price :<span id="price">  $0.00 </span></p>
+                    <p class="col s6 m6 l6">Quantity : <span id="quantity" ><input type="number" value="1" min="1" max="25"> </span></p>
                 </span>
             </div>
         </div>';

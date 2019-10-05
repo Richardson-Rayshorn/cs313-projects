@@ -22,9 +22,9 @@ function seeProduct(e)
 
 function addCart(e)
 {
-    var name = document.getElementById("productname").value;
-    var price = document.getElementById("price").value;
-    var quantity = document.getElementById("quantity").value;
+    var name = document.getElementById("productname").innerHTML;
+    var price = document.getElementById("price").innerHTML;
+    var quantity = document.getElementById("quantity").innerHTML;
 
     alert(name + "" + price + "" + quantity);
     // xmlhttp.open("GET", "productview.php", true);
