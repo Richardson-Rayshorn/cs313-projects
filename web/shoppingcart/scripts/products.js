@@ -1,4 +1,6 @@
 var app = document.getElementById("app");
+var parentEle = document.getElementById("header-nav");
+var anchor = parentEle.querySelectorAll(".anchorTag");
 
 var xmlhttp = new XMLHttpRequest();
 var xmlcart = new XMLHttpRequest();
