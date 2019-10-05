@@ -1,5 +1,5 @@
 <?php 
-    
+    session_start();
     include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
@@ -8,17 +8,8 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    session_id("productview");
-    session_start();
+    $_SESSION["cart"][] = array($_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quantity"]);
 
-    $_SESSION["productname"] = $_REQUEST["prodname"];
-    $_SESSION["price"] = $_REQUEST["price"];
-    $_SESSION["quantity"] = $_REQUEST["quan"];
-
-    session_id("cartsession");
-    session_start();
-    echo $_SESSION[$a];
-    
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
