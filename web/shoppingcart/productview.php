@@ -18,7 +18,7 @@
             <div class="col s12 m12 l8">
                 <div class="carousel carousel-slider center">
                     <div class="carousel-fixed-item center">
-                        <a class="btn waves-effect white grey-text darken-text-2" onClick="addCart(this)">Add to Cart</a>
+                        <a class="btn waves-effect white grey-text darken-text-2" type="submit">Add to Cart</a>
                     </div>
                     <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
                 </div>
