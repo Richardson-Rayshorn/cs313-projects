@@ -15,16 +15,18 @@
     <body>
   <header>
     <nav id="navbar">
-      <img src="./images/close-512.png" alt="Close" id="close-menu">
-      <ul id="header-nav" class="right hide-on-med-and-down">';
-      for($i = 0; $i < $arr_length; $i++) {
-        echo '<li><a class="anchorTag" id="'; 
-        echo $menu_links[$i]; 
-        echo '" onClick="navigation(this)">';
-        echo $menu_links[$i]; 
-        echo '</a></li>';
-      }
-      echo '</ul>
+      <div class="nav-wrapper">
+        <img src="./images/close-512.png" alt="Close" id="close-menu">
+        <ul id="header-nav" class="right hide-on-med-and-down">';
+        for($i = 0; $i < $arr_length; $i++) {
+          echo '<li><a class="anchorTag" id="'; 
+          echo $menu_links[$i]; 
+          echo '" onClick="navigation(this)">';
+          echo $menu_links[$i]; 
+          echo '</a></li>';
+        }
+        echo '</ul>
+      </div>
     </nav>
   </header>
   <div class="container">
