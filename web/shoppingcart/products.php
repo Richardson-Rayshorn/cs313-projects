@@ -22,7 +22,7 @@ echo $numres;
             echo '</div>
             <div class="price"> $'; echo $products[$i][$y++];
             echo '</div>
-            <a class="see-product btn waves-effect" data-id="'; 
+            <a class="see-product btn waves-effect darken-text-2" data-id="'; 
             echo $data_id;
             echo '"
              onClick="seeProduct(this)">See Product</a>
