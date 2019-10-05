@@ -22,9 +22,9 @@ echo $numres;
             echo '</div>
             <div class="price"> $'; echo $products[$i][$y++];
             echo '</div>
-            <button class="add-to-cart" data-id="'; 
+            <button class="see-product" data-id="'; 
             echo $data_id;
-            echo'">Add to Cart</button>
+            echo'">See Product</button>
             </div>';
         }
         $data_id++;
