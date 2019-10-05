@@ -9,7 +9,7 @@
 
     $_SESSION["cart"] = [];
     
-    array_push($_SESSION["cart"], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
+    array_push($_SESSION["cart"][], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
      for($i = 0; $i < $num; $i++)
         {
