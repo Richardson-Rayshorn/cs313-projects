@@ -2,6 +2,7 @@
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
 
+    echo is_int($id_int);
     $num = count($products);
     $numinside = count($products, COUNT_RECURSIVE);
     $numval = $numinside - $num;
