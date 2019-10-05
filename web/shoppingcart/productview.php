@@ -13,7 +13,7 @@
     }
     echo $productname;
     echo '
-    <form method="post" action="<?php echo $_SERVER[\'PHP_SELF\'];?>" >
+    <form method="post" action="'; echo $_SERVER['PHP_SELF']; echo '" >
         <div class="row">
             <div class="col s12 m12 l8">
                 <div class="carousel carousel-slider center">
