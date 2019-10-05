@@ -15,10 +15,10 @@
     $_SESSION[$_REQUEST["price"]] = $_REQUEST["price"];
     $_SESSION[$_REQUEST["quan"]] = $_REQUEST["quan"];
 
-    foreach ($_SESSION["cart"] as $key => $value)
-    {
-        echo $value;
-    }
+    echo $_SESSION[$_REQUEST["prodname"]];
+    echo $_SESSION[$_REQUEST["price"]];
+    echo $_SESSION[$_REQUEST["quan"]];
+    
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
