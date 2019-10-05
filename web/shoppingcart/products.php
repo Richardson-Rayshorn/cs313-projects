@@ -1,4 +1,6 @@
-<?php include 'productlist.php'; 
+<?php 
+session_start();
+include 'productlist.php'; 
 
 $data_id = 0;
 $num = count($products);
