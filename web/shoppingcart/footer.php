@@ -16,7 +16,7 @@
       </nav>
     </div>
     <script src="./scripts/products.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/materialcustom.js"></script>
   </footer>
 </body>
 </html>
