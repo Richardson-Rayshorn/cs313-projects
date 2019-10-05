@@ -5,8 +5,7 @@ $num = count($products);
 $numinside = count($products, COUNT_RECURSIVE);
 $numval = $numinside - $num;
 $numres = $numval / $num;
-echo $numres;
-// echo $num . "<span>total 2</span>";
+
     echo '
 <div class="products">';
     for($i = 0; $i < $num; $i++)
