@@ -24,13 +24,13 @@
                     for ($y = 0; $y < $numres;)
                     {
                         echo '<img src="../images/shopping-cart-images/';
-                        echo $product[$i][$y++]; echo '">
+                        echo $products[$i][$y++]; echo '">
                         </a>
                         </div>
                     </div>
                     <div class="col s12 m12 l4">
                                 <h4 id="productname">'; 
-                                echo $product[$i][$y++]; 
+                                echo $products[$i][$y++]; 
                                 echo '</h4>
                             <p>';
                             echo $products[$i][$y++];
