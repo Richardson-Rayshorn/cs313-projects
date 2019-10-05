@@ -3,7 +3,7 @@
     include_once "productlist.php";
     $num = count($products);
 
-    echo $num . "total 2";
+    echo $num . "<span>total 2</span>";
 //     echo '
 // <div class="products">'
 //     for($i = 0; )
