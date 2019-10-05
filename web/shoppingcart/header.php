@@ -1,5 +1,5 @@
 <?php
-    $menu_links = array('browse', 'cart');
+    $menu_links = array('products', 'cart');
     $arr_length = count($menu_links);
 
     echo '<!DOCTYPE html>
