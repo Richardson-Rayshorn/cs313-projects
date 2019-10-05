@@ -1,3 +1,7 @@
 .product-name{
     font-size:18px;
 }
+
+.productviewpage .carousel .carousel-item{
+    visibility: visible !important;
+}

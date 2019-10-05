@@ -1,8 +1,6 @@
 <?php include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
-
-    echo is_int($id_int);
     $num = count($products);
     $numinside = count($products, COUNT_RECURSIVE);
     $numval = $numinside - $num;
@@ -13,7 +11,7 @@
             if ($id_int == $i)
             {
                 echo '
-                <div class="row">
+                <div class="row productviewpage">
                     <div class="col s12 m12 l8">
                         <div class="carousel carousel-slider center">
                             <div class="carousel-fixed-item center">
