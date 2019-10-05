@@ -10,8 +10,9 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $productname = $_POST['productname'];
+        echo $productname;
     }
-    echo $productname;
+    
     echo '
     <form method="post" action="'; echo $_SERVER['PHP_SELF']; echo '" >
         <div class="row">
