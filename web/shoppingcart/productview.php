@@ -8,7 +8,11 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    $_SESSION["cart"][] = array($_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quantity"]);
+    $cart = [];
+    array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quantity"]);
+
+    print_r($cart);
+    // $_SESSION["cart"] = ;
 
      for($i = 0; $i < $num; $i++)
         {
