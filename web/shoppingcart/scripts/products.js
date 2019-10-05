@@ -1,3 +1,3 @@
-function seeProduct() {
-    alert("the button clicked");
+function seeProduct(e) {
+    alert(e.dataset.id);
 }
