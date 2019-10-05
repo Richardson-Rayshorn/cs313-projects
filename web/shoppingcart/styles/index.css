@@ -5,3 +5,7 @@
 .productviewpage .carousel .carousel-item{
     visibility: visible !important;
 }
+
+nav ul li a{
+    text-transform: capitalize;
+}

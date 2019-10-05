@@ -1,5 +1,5 @@
 <?php
-    $menu_links = array('about', 'assignments');
+    $menu_links = array('browse', 'cart');
     $arr_length = count($menu_links);
 
     echo '<!DOCTYPE html>
@@ -27,7 +27,7 @@
     <nav id="navbar">
       <div class="nav-wrapper">
         <img src="./images/close-512.png" alt="Close" id="close-menu">
-        <ul id="nav-mobile" class="left hide-on-med-and-down">';
+        <ul id="nav-mobile" class="right hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a class="anchorTag" id="'; 
           echo $menu_links[$i]; 
