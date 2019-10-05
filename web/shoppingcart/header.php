@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $menu_links = array('products', 'cart');
     $arr_length = count($menu_links);
 
