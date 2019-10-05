@@ -31,5 +31,5 @@ echo $numres;
     }
 echo '
 
-<img src="./images/bread.jpg"/>
+<img src="../images/arrow.png"/>
 </div> ';
