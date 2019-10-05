@@ -1,4 +1,4 @@
-<?php include_once 'productlist.php'; ?>
+<?php include 'productlist.php'; ?>
     
 <?php    // $num = count($products);
 
