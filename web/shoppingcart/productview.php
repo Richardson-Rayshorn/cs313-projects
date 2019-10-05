@@ -10,7 +10,7 @@ session_start();
 
     $_SESSION["cart"] = [];
     
-    array_push($_SESSION["cart"][], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
+    array_push($_SESSION["cart"], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     foreach ($_SESSION["cart"] as $key => $value)
     {
