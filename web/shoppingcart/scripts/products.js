@@ -12,7 +12,6 @@ xmlhttp.open("GET", "products.php", true);
 xmlhttp.send();
 
 function seeProduct(e) {
-    alert(e.dataset.id);
     var s = e.dataset.id;
     xmlhttp.open("GET", "productview.php?q=" + s, true);
     xmlhttp.send();
