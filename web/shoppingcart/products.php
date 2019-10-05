@@ -1,7 +1,6 @@
-<?php 
-
-    include_once 'productlist.php';
-    // $num = count($products);
+<?php include_once 'productlist.php'; ?>
+    
+<?php    // $num = count($products);
 
     echo "<span>total 2</span>";
 //     echo '
