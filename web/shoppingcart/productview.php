@@ -10,6 +10,8 @@
     
      for($i = 0; $i < $num; $i++)
         {
+            echo $products[$i];
+            echo $id_int;
             if ($id_int == $products[$i])
             {
                 echo '
