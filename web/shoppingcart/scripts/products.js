@@ -1,3 +1,3 @@
-function seeProduct(e) {
+function seeProduct() {
     alert("the button clicked");
 }
