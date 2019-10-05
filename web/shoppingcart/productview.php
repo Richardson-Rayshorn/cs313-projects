@@ -15,6 +15,7 @@
     $_SESSION["price"] = $_REQUEST["price"];
     $_SESSION["quantity"] = $_REQUEST["quan"];
 
+    echo $_GLOBAL[$a];
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)

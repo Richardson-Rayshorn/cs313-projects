@@ -1,6 +1,7 @@
 var app = document.getElementById("app");
 
 var xmlhttp = new XMLHttpRequest();
+var xmlcart = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function()
 {
@@ -30,6 +31,6 @@ function addCart()
     xmlhttp.open("GET", "productview.php?prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
     xmlhttp.send();
 
-    xmlhttp.open("POST", "cart.php", true);
-    xmlhttp.send();
+    xmlcart.open("GET", "cart.php", true);
+    xmlcart.send();
 }
