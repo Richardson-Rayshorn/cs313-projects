@@ -22,10 +22,10 @@ echo $numres;
             echo '</div>
             <div class="price"> $'; echo $products[$i][$y++];
             echo '</div>
-            <button class="see-product" data-id="'; 
+            <a class="see-product btn waves-effect" data-id="'; 
             echo $data_id;
             echo '"
-             onClick="seeProduct(this)">See Product</button>
+             onClick="seeProduct(this)">See Product</a>
             </div>';
         }
         $data_id++;
