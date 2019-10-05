@@ -15,7 +15,7 @@ echo $numres;
         {
             echo '<div>
             <img src="../images/shopping-cart-images/';echo $products[$i][$y++]; 
-            echo'" alt="product image" />
+            echo'" alt="product image" width="150" height="130"/>
             <div class="product-name">'; echo $products[$i][$y++];
             echo '</div>
             <div class="product-summary">'; echo $products[$i][$y++];
