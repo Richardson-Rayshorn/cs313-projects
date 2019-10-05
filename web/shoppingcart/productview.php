@@ -10,8 +10,7 @@
     
      for($i = 0; $i < $num; $i++)
         {
-            $id_int_new = $products[$i];
-            if ($id_int == $id_int_new)
+            if ($id_int == $i)
             {
                 echo '
                 <div class="row">
