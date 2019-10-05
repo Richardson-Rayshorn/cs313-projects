@@ -1,6 +1,6 @@
 <?php
 
-session_id("productview")
+session_id("productview");
 session_start();
 
 $count_products = count($_SESSION);
