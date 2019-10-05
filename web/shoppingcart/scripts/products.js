@@ -22,6 +22,7 @@ function seeProduct(e)
 
 function addCart(e)
 {
+    
     xmlhttp.open("GET", "productview.php", true);
     xmlhttp.send();
 }
