@@ -1,9 +1,9 @@
 <?php include 'productlist.php'; 
 
 echo '
-<div>
+<div class="row">
 
-    <div>
+    <div class="col s-12 m-6 l-6">
         <div class="carousel carousel-slider center">
             <div class="carousel-fixed-item center">
                 <a class="btn waves-effect white grey-text darken-text-2">button</a>
@@ -26,7 +26,7 @@ echo '
             </div>
         </div>
     </div>
-    <div>
+    <div class="col s-12 m-6 l-6">
 
     </div>
 </div>';
