@@ -20,7 +20,7 @@ function seeProduct(e)
     xmlhttp.send();
 }
 
-function addCart(e)
+function addCart()
 {
     var name = document.getElementById("productname").innerHTML;
     var price = document.getElementById("price").innerHTML;
@@ -28,5 +28,8 @@ function addCart(e)
 
     alert(name + "" + price + "" + quantity);
     xmlhttp.open("GET", "productview.php?prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
+    xmlhttp.send();
+
+    xmlhttp.open("POST", "cart.php", true);
     xmlhttp.send();
 }

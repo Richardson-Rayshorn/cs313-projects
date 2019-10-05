@@ -1,5 +1,4 @@
 <?php
-    session_start();
     $menu_links = array('about', 'assignments');
     $arr_length = count($menu_links);
 

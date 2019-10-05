@@ -1,4 +1,7 @@
 <?php 
+    session_id("productview")
+    session_start();
+    
     include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
@@ -11,8 +14,6 @@
     $_SESSION["price"] = $_REQUEST["price"];
     $_SESSION["quantity"] = $_REQUEST["quan"];
 
-    echo "The sessions are " . $_SESSION["productname"] . " " . $_SESSION["price"] . " " . $_SESSION["quantity"];
-    
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
