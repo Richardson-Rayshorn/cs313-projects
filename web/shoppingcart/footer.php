@@ -15,6 +15,7 @@
         echo '</ul>
       </nav>
     </div>
+    <script src="./scripts/products.js"></script>
   </footer>
 </body>
 </html>

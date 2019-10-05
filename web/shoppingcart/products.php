@@ -30,5 +30,4 @@ echo $numres;
         $data_id++;
     }
 echo '
-<script src="./scripts/products.js"></scripts>
 </div> ';
