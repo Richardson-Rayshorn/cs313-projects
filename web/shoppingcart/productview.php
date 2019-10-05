@@ -1,7 +1,5 @@
 <?php 
-    // session_id("productview")
-    // session_start();
-
+    
     include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
@@ -9,6 +7,9 @@
     $numinside = count($products, COUNT_RECURSIVE);
     $numval = $numinside - $num;
     $numres = $numval / $num;
+
+    session_id("productview")
+    session_start();
 
     $_SESSION["productname"] = $_REQUEST["prodname"];
     $_SESSION["price"] = $_REQUEST["price"];
