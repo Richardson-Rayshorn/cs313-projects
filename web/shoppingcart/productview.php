@@ -12,7 +12,7 @@
         {
             echo $products[$i];
             echo $id_int;
-            if ($id_int == $products[$i])
+            if ($id_int === $products[$i])
             {
                 echo '
                 <div class="row">
