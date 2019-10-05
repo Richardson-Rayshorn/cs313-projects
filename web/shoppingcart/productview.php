@@ -1,10 +1,18 @@
-<?php include 'productlist.php'; 
+<?php 
+session_start();
+include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
     $num = count($products);
     $numinside = count($products, COUNT_RECURSIVE);
     $numval = $numinside - $num;
     $numres = $numval / $num;
+
+    $_SESSION["productname"] = $_REQUEST["prodname"];
+    $_SESSION["price"] = $_REQUEST["price"];
+    $_SESSION["quantity"] = $_REQUEST["quan"];
+
+    echo "The sessions are " . $_SESSION["productname"] . " " . $_SESSION["price"] . " " . $_SESSION["quantity"];
     
      for($i = 0; $i < $num; $i++)
         {
