@@ -16,7 +16,6 @@
       </nav>
     </div>
   </footer>
-  <script src="./scripts/products.js"></scripts>
 </body>
 </html>
     ';
