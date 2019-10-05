@@ -10,8 +10,8 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $productname = $_POST['productname'];
+        echo $productname;
     }
-    echo $productname;
     echo '
     <div class="row">
         <div class="col s12 m12 l8">
