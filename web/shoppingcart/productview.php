@@ -7,27 +7,9 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    // $_SESSION["cart"] = [];
+    $_SESSION["cart"] = [];
     
-    // array_push($_SESSION["cart"], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
-
-    $_SESSION[$_REQUEST["prodname"]] = $_REQUEST["prodname"];
-    $_SESSION[$_REQUEST["price"]] = $_REQUEST["price"];
-    $_SESSION[$_REQUEST["quan"]] = $_REQUEST["quan"];
-
-    foreach ($_SESSION[$_REQUEST["prodname"]] as $key=>$value)
-    {
-        echo $value;
-    }
-    foreach ($_SESSION[$_REQUEST["price"]] as $key=>$value)
-    {
-        echo $value;
-    }
-    foreach ($_SESSION[$_REQUEST["quan"]] as $key=>$value)
-    {
-        echo $value;
-    }
-    
+    array_push($_SESSION["cart"], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
      for($i = 0; $i < $num; $i++)
         {

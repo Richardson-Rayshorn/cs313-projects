@@ -6,6 +6,11 @@ $numinside = count($products, COUNT_RECURSIVE);
 $numval = $numinside - $num;
 $numres = $numval / $num;
 
+foreach($_SESSION["cart"] as $key=>$value)
+{
+    echo $value;
+}
+
     echo '
 <div class="products">';
     for($i = 0; $i < $num; $i++)
