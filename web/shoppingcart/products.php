@@ -30,4 +30,10 @@ echo $numres;
         $data_id++;
     }
 echo '
+
+<script>
+    function seeProduct() {
+        alert("the button clicked");
+    }
+</script>
 </div> ';
