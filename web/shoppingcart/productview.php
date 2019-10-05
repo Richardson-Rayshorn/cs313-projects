@@ -15,7 +15,10 @@
     $_SESSION["price"] = $_REQUEST["price"];
     $_SESSION["quantity"] = $_REQUEST["quan"];
 
-    echo $_GLOBAL[$a];
+    session_id("cartsession");
+    session_start();
+    echo $_SESSION[$a];
+    
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
