@@ -22,7 +22,11 @@ function seeProduct(e)
 
 function addCart(e)
 {
-    
-    xmlhttp.open("GET", "productview.php", true);
-    xmlhttp.send();
+    var name = document.getElementById("productname").value;
+    var price = document.getElementById("price").value;
+    var quantity = document.getElementById("quantity").value;
+
+    alert(name + price + quantity);
+    // xmlhttp.open("GET", "productview.php", true);
+    // xmlhttp.send();
 }
