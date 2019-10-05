@@ -2,7 +2,7 @@
 
 echo '
 <div class="row">
-    <div class="col s-12 m-12 l-12">
+    <div class="col s12 m12 l6">
         <div class="carousel carousel-slider center">
             <div class="carousel-fixed-item center">
                 <a class="btn waves-effect white grey-text darken-text-2">button</a>
@@ -25,7 +25,7 @@ echo '
             </div>
         </div>
     </div>
-    <div class="col s-12 m-6 l-6">
+    <div class="col s12 m6 l6">
 
     </div>
 </div>';
