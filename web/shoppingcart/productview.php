@@ -18,7 +18,7 @@
     }
     else 
     {
-        $_SESSION['counter'] = 0;
+        $_SESSION['counter'] = -1;
     }
 
     if(!isset($_SESSION["cart"]))
