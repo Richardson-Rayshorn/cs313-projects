@@ -1,6 +1,6 @@
 var app = document.getElementById("app");
 // var anchor = document.querySelectorAll(".anchorTag");
-
+var s;
 var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function()
@@ -16,7 +16,7 @@ xmlhttp.send();
 
 function seeProduct(e) 
 {
-    var s = e.dataset.id;
+    s = e.dataset.id;
     xmlhttp.open("GET", "productview.php?q=" + s, true);
     xmlhttp.send();
 }
@@ -39,7 +39,7 @@ function addCart()
     var quantity = document.getElementById("quantity").value;
 
     alert(name + "" + price + "" + quantity);
-    xmlhttp.open("GET", "productview.php?prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
+    xmlhttp.open("GET", "productview.php?q=" + s + "&prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
     xmlhttp.send();
 
     // xmlcart.open("GET", "cart.php", true);
