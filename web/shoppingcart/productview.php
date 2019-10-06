@@ -12,7 +12,7 @@
     $prodname = $_REQUEST["prodname"];
     $price = $_REQUEST["price"];
     $quantity = $_REQUEST["quan"];
-    $clickCount = $_REQUEST["clickcounter"];
+    $clickCount = $_REQUEST["x"];
 
     // if(isset($_SESSION['counter']))
     // {
