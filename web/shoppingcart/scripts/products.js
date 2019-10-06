@@ -50,3 +50,14 @@ function addCart()
                     + "&price=" + price + "&quan=" + quantity, true);
     xmlhttp.send();
 }
+
+function browse()
+{
+    xmlhttp.open("GET", "products.php", true);
+    xmlhttp.send();
+}
+
+function order()
+{
+    echo "Confirmation page reached";
+}
