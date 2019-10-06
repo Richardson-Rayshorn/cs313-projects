@@ -3,7 +3,6 @@ var parentEle = document.getElementById("header-nav");
 var anchor = document.querySelectorAll(".anchorTag");
 
 var xmlhttp = new XMLHttpRequest();
-var xmlcart = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function()
 {
