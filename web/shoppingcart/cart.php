@@ -11,6 +11,10 @@ echo '
             <div class="col s12 m4 l4">';
 
 echo $count_session;
+
+echo $_SESSION["cart"][0];
+echo $_SESSION["cart"][1];
+echo $_SESSION["cart"][2];
 for ($i = 0; $i < $count_session; $i++)
 {
     foreach ($_SESSION["cart"][$i] as $key => $value)
