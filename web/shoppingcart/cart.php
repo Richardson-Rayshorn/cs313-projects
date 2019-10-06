@@ -8,7 +8,7 @@ echo '
             <div class="col s12 m12 l12">
                 <h3>Shopping Cart</h3>
             </diV>
-            <div class="col s12 m4 l4"
+            <div class="col s12 m4 l4">
             <div class="col s12 m12 l12">';
 for ($i = 0; $i < $count_session; $i++)
 {
