@@ -13,9 +13,7 @@ for ($i = 0; $i < $count_session; $i++)
 {
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
-                echo $key;
-        echo '</div>
-            <div class="col s12 m4 l4">';
+                
                 echo $value;
     }
 }
