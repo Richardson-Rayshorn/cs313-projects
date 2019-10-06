@@ -19,7 +19,7 @@ for ($i = 0; $i < $count_session; $i++)
 {
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
-                
+                echo "ytest the inside of the foreach";
                 echo $value;
     }
 }
