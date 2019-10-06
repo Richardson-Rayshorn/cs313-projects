@@ -47,6 +47,6 @@ function addCart()
     xmlhttp.open("GET", "productview.php?prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
     xmlhttp.send();
 
-    xmlcart.open("GET", "cart.php", true);
-    xmlcart.send();
+    // xmlcart.open("GET", "cart.php", true);
+    // xmlcart.send();
 }
