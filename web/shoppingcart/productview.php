@@ -8,23 +8,23 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
     
-    $prodname = $_REQUEST["prodname"];
-    $price = $_REQUEST["price"];
-    $quantity = $_REQUEST["quan"];
+    // $prodname = $_REQUEST["prodname"];
+    // $price = $_REQUEST["price"];
+    // $quantity = $_REQUEST["quan"];
 
-    if(!isset($_SESSION["cart"]))
-    {
-        $_SESSION["cart"] = Array();
-    }
+    // if(!isset($_SESSION["cart"]))
+    // {
+    //     $_SESSION["cart"] = Array();
+    // }
 
-    $_SESSION["cart"][$id_int] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
-    // array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
+    // $_SESSION["cart"][$id_int] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
+    // // array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
-    foreach ($_SESSION["cart"][$id_int] as $key => $value)
-    {
-        echo $id_int;
-        echo $key . " " . $value;
-    }
+    // foreach ($_SESSION["cart"][$id_int] as $key => $value)
+    // {
+    //     echo $id_int;
+    //     echo $key . " " . $value;
+    // }
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)
