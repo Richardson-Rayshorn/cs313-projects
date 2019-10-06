@@ -1,5 +1,5 @@
 var app = document.getElementById("app");
-var anchor = document.querySelectorAll(".anchorTag");
+// var anchor = document.querySelectorAll(".anchorTag");
 
 var xmlhttp = new XMLHttpRequest();
 
