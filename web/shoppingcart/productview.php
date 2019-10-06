@@ -21,12 +21,6 @@
 
     $_SESSION["cart"][$clickCount] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
     
-
-    foreach ($_SESSION["cart"][$_SESSION['counter']] as $key => $value)
-    {
-        echo $id_int;
-        echo $key . " " . $value;
-    }
      for($i = 0; $i < $num; $i++)
         {
             if ($id_int == $i)

@@ -27,7 +27,6 @@
   <header>
     <nav id="navbar">
       <div class="nav-wrapper">
-        <img src="./images/close-512.png" alt="Close" id="close-menu">
         <ul id="nav-mobile" class="right hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a class="anchorTag" id="'; 
@@ -41,5 +40,4 @@
     </nav>
   </header>
   <div class="container">
-    <span class="hamburger-icon" id="hamburger"><img src="./images/hamburger_menu_9163.png" alt="Menu"></span>
     ';
