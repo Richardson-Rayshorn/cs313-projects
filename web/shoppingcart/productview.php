@@ -1,5 +1,5 @@
 <?php 
-session_start();
+// session_start();
     include 'productlist.php'; 
     $ids = $_REQUEST["q"];
     $id_int = (int)$ids;
