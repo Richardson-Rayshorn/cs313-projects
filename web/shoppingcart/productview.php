@@ -18,7 +18,7 @@
         $_SESSION["cart"] = Array();
     }
 
-    $_SESSION["cart"][$i]++ = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
+    $_SESSION["cart"][$i] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
     // array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     foreach ($_SESSION["cart"][$id_int] as $key => $value)
