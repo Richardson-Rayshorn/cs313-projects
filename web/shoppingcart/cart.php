@@ -7,6 +7,7 @@ for ($i = 0; $i < $count_session; $i++)
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
         echo $i;
+        echo $_SESSION['counter'];
         echo $value . "<br/>";
     }
 }
