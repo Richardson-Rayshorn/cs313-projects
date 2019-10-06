@@ -8,9 +8,13 @@ $numinside = count($products, COUNT_RECURSIVE);
 $numval = $numinside - $num;
 $numres = $numval / $num;
 
-foreach($_SESSION["cart"] as $key=>$value)
+$count_session = count($_SESSION["cart"]);
+for ($i = 0; $i < $count_session; i++)
 {
-    echo $value;
+    foreach ($_SESSION["cart"][$i] as $key => $value)
+    {
+        echo $key . " " . $value;
+    }
 }
 
     echo '
