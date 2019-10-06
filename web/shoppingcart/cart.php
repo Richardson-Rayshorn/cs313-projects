@@ -9,22 +9,27 @@ echo '
                 <h3>Shopping Cart</h3>
             </diV>
             <div class="col s12 m12 l12">
-                <div class="col s12 m4 l4">';
+                <table>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                    </tr>
+                    ';
 for ($i = 0; $i < $count_session; $i++)
 {
+                    echo '<tr>';
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
-                    echo $key;
-        echo '  </div>
-            </div>
-            <div class="col s12 m12 l12">
-                <div class="col s12 m4 l4">';
-                    echo $value;
+                echo '<td>';
+                  echo $value;
+                echo '</td>'
     }
+                    echo '</tr>';
 }
 
 echo '
-                </div>
+                </table>
             </div>
         </div>';
 
