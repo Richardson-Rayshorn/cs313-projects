@@ -3,7 +3,6 @@
     $menu_links = array('products', 'cart');
     $arr_length = count($menu_links);
 
-    $cart = [];
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>

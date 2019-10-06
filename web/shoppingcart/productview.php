@@ -8,10 +8,11 @@ session_start();
     $numval = $numinside - $num;
     $numres = $numval / $num;
 
-    $_SESSION["cart"] = $cart;
+    $cart = [];
     
     array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
+    $_SESSION["cart"] = $cart;
     foreach ($_SESSION["cart"] as $key => $value)
     {
         echo $key . " " . $value;
