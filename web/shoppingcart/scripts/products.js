@@ -39,7 +39,17 @@ function addCart()
     var quantity = document.getElementById("quantity").value;
 
     alert(name + "" + price + "" + quantity);
-    xmlhttp.open("GET", "productview.php?q=" + s + "&prodname=" + name + "&price=" + price + "&quan=" + quantity, true);
+
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+        sessionStorage.clickcount = 0;
+        }
+        var clickcounter = sessionStorage.clickcount;
+    }
+    xmlhttp.open("GET", "productview.php?q=" + s + "&x=" + clickcounter + "&prodname=" + name 
+                    + "&price=" + price + "&quan=" + quantity, true);
     xmlhttp.send();
 
     // xmlcart.open("GET", "cart.php", true);
