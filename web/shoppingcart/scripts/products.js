@@ -38,8 +38,6 @@ function addCart()
     var price = document.getElementById("price").innerHTML;
     var quantity = document.getElementById("quantity").value;
 
-    alert(name + "" + price + "" + quantity);
-
     if(typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
         sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
