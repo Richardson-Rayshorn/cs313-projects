@@ -11,9 +11,9 @@ echo '
             <div class="col s12 m12 l12">
                 <table>
                     <tr>
-                        <td>Product Name</td>
-                        <td>Price</td>
-                        <td>Quantity</td>
+                        <td><h4>Product Name</h4></td>
+                        <td><h4>Price</h4></td>
+                        <td><h4>Quantity</h4></td>
                     </tr>
                     ';
 for ($i = 0; $i < $count_session; $i++)
