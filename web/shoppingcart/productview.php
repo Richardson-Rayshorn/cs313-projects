@@ -14,18 +14,6 @@
     $quantity = $_REQUEST["quan"];
     $clickCount = $_REQUEST["x"];
 
-    // if(isset($_SESSION['counter']))
-    // {
-    //     $_SESSION['counter'] += 1;
-    // }
-    // else 
-    // {
-    //     $_SESSION['counter'] = -1;
-    // }
-    // if(!isset($_SESSION['counter']))
-    // {
-    //     $_SESSION['counter'] = 0;
-    // }
     
     if(!isset($_SESSION["cart"]))
     {
@@ -33,12 +21,7 @@
     }
 
     $_SESSION["cart"][$clickCount] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
-    // array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
-  
-    // if ($_SESSION['counter'] != count($_SESSION["cart"]))
-    // {
-    //     $_SESSION['counter'] += 1;
-    // }
+    
 
     foreach ($_SESSION["cart"][$_SESSION['counter']] as $key => $value)
     {
