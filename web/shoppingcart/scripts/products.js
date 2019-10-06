@@ -1,5 +1,4 @@
 var app = document.getElementById("app");
-var parentEle = document.getElementById("header-nav");
 var anchor = document.querySelectorAll(".anchorTag");
 
 var xmlhttp = new XMLHttpRequest();
@@ -31,9 +30,6 @@ function navigation(e){
             break;
         }
     }
-
-    var nav = document.getElementById("navbar");
-    nav.classList.remove("visible-nav");
 }
 
 function addCart()
