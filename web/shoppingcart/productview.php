@@ -13,7 +13,7 @@ session_start();
     array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     $_SESSION["cart"][$id_int] = $cart;
-    foreach ($_SESSION["cart"] as $key => $value)
+    foreach ($_SESSION["cart"][$id_int] as $key => $value)
     {
         echo $key . " " . $value;
     }
