@@ -1,5 +1,5 @@
 var app = document.getElementById("app");
-// var anchor = document.querySelectorAll(".anchorTag");
+var anchor = document.querySelectorAll(".anchorTag");
 var s;
 var xmlhttp = new XMLHttpRequest();
 
@@ -21,16 +21,16 @@ function seeProduct(e)
     xmlhttp.send();
 }
 
-// function navigation(e){
-//     var i = 0; 
-//     for(; i <= anchor.length; i++){
-//         if(anchor[i].id === e.id){
-//             xmlhttp.open("GET", e.id + ".php", true);
-//             xmlhttp.send();
-//             break;
-//         }
-//     }
-// }
+function navigation(e){
+    var i = 0; 
+    for(; i <= anchor.length; i++){
+        if(anchor[i].id === e.id){
+            xmlhttp.open("GET", e.id + ".php", true);
+            xmlhttp.send();
+            break;
+        }
+    }
+}
 
 function addCart()
 {
