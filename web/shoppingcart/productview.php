@@ -13,10 +13,11 @@
     $price = $_REQUEST["price"];
     $quantity = $_REQUEST["quan"];
 
-    if(!isset($_SESSION["cart"]))
-    {
-        $_SESSION["cart"] = Array();
-    }
+    // if(!isset($_SESSION["cart"]))
+    // {
+    //     $_SESSION["cart"] = Array();
+    // }
+    $_SESSION["cart"] = Array();
 
     $_SESSION["cart"][$id_int] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
     // array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
