@@ -59,5 +59,5 @@ function browse()
 
 function order()
 {
-    echo "Confirmation page reached";
+    echo("Confirmation page reached");
 }
