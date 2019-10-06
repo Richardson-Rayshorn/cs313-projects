@@ -21,11 +21,9 @@ for ($i = 0; $i < $count_session; $i++)
                 echo '<tr>';
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
-                echo '<td>
-                <input type="number" id="chquantity" value="';
-                echo $value;
-                echo '" min="1" max="25">  
-                </td>';
+                echo '<td>';
+                  echo $value;
+                echo '</td>';
     }
                 echo '</tr>';
 }
