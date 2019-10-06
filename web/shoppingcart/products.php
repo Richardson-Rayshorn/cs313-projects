@@ -18,12 +18,12 @@ for ($i = 0; $i < $count_session; $i++)
 }
 
     echo '
-<div class="products">';
+<div class="products row">';
     for($i = 0; $i < $num; $i++)
     {
         for($y = 0; $y < $numres;)
         {
-            echo '<div>
+            echo '<div class="col s12 m4 l4">
             <img src="../images/shopping-cart-images/';echo $products[$i][$y++]; 
             echo'" alt="product image" width="150" height="130"/>
             <div class="product-name">'; echo $products[$i][$y++];
