@@ -25,6 +25,10 @@
     {
         $_SESSION['counter'] = 0;
     }
+    else if ($_SESSION['counter'] == count($_SESSION["cart"]))
+    {
+        $_SESSION['counter'] += 1;
+    }
     if(!isset($_SESSION["cart"]))
     {
         $_SESSION["cart"] = Array();
@@ -79,8 +83,3 @@
             }
             
         }
-
-    if ($_SESSION['counter'] == count($_SESSION["cart"]))
-    {
-        $_SESSION['counter'] += 1;
-    }

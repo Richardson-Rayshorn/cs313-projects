@@ -8,6 +8,7 @@ for ($i = 0; $i < $count_session; $i++)
     {
         echo $i;
         echo $_SESSION['counter'];
+        echo $count_session;
         echo $value . "<br/>";
     }
 }
