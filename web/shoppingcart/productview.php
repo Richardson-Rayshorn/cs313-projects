@@ -23,7 +23,7 @@
     $_SESSION["cart"][$clickCount] = array("Product Name"=>$prodname, "Price"=>$price, "Quantity"=>$quantity);
     
 
-    foreach ($_SESSION["cart"]$clickCount] as $key => $value)
+    foreach ($_SESSION["cart"][$clickCount] as $key => $value)
     {
         echo $id_int;
         echo $clickCount;
