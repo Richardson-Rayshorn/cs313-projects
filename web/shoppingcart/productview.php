@@ -9,7 +9,7 @@ session_start();
     $numres = $numval / $num;
     
 
-    $_SESSION["cart"][$id_int];
+    $_SESSION["cart"][$id_int] = [];
     array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
     foreach ($_SESSION["cart"][$id_int] as $key => $value)
