@@ -38,6 +38,11 @@ function addCart()
     var price = document.getElementById("price").innerHTML;
     var quantity = document.getElementById("quantity").value;
 
+    var priceint = parseInt(price); 
+    var quanInt = parseInt(quantity);
+
+    var actualPrice = priceint * quanInt;
+
     if(typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
         sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
@@ -47,7 +52,7 @@ function addCart()
         var clickcounter = sessionStorage.clickcount;
     }
     xmlhttp.open("GET", "productview.php?q=" + s + "&x=" + clickcounter + "&prodname=" + name 
-                    + "&price=" + price + "&quan=" + quantity, true);
+                    + "&price=" + actualPrice + "&quan=" + quantity, true);
     xmlhttp.send();
 }
 
