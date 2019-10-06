@@ -7,12 +7,11 @@ session_start();
     $numinside = count($products, COUNT_RECURSIVE);
     $numval = $numinside - $num;
     $numres = $numval / $num;
-
-    $cart = [];
     
-    array_push($cart, $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
 
-    $_SESSION["cart"][$id_int] = $cart;
+    $_SESSION["cart"][$id_int] = [];
+    array_push($_SESSION["cart"][$id_int], $_REQUEST["prodname"],$_REQUEST["price"],$_REQUEST["quan"]);
+
     foreach ($_SESSION["cart"][$id_int] as $key => $value)
     {
         echo $key . " " . $value;
