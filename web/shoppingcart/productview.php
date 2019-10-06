@@ -25,7 +25,7 @@
     {
         $_SESSION['counter'] = 0;
     }
-    else if ($_SESSION['counter'] < count($_SESSION["cart"]))
+    else if ($_SESSION['counter'] <= count($_SESSION["cart"]))
     {
         $_SESSION['counter'] += 1;
     }
