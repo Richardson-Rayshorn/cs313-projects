@@ -18,14 +18,14 @@ echo '
                     ';
 for ($i = 0; $i < $count_session; $i++)
 {
-                    echo '<tr>';
+                echo '<tr>';
     foreach ($_SESSION["cart"][$i] as $key => $value)
     {
                 echo '<td>';
                   echo $value;
-                echo '</td>'
+                echo '</td>';
     }
-                    echo '</tr>';
+                echo '</tr>';
 }
 
 echo '
