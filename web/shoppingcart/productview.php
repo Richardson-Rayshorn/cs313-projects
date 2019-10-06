@@ -8,19 +8,23 @@
     $numval = $numinside - $num;
     $numres = $numval / $num;
     
+    
     $prodname = $_REQUEST["prodname"];
     $price = $_REQUEST["price"];
     $quantity = $_REQUEST["quan"];
 
-    if(isset($_SESSION['counter']))
+    // if(isset($_SESSION['counter']))
+    // {
+    //     $_SESSION['counter'] += 1;
+    // }
+    // else 
+    // {
+    //     $_SESSION['counter'] = -1;
+    // }
+    if(!isset($_SESSION['counter']))
     {
-        $_SESSION['counter'] += 1;
+        $_SESSION['counter'] = 0;
     }
-    else 
-    {
-        $_SESSION['counter'] = -1;
-    }
-
     if(!isset($_SESSION["cart"]))
     {
         $_SESSION["cart"] = Array();
@@ -75,3 +79,8 @@
             }
             
         }
+
+    if ($_SESSION['counter'] == count($_SESSION["cart"]))
+    {
+        $_SESSION['counter'] += 1;
+    }
