@@ -41,7 +41,7 @@ function addCart()
     var pricefloat = parseFloat(price); 
     var quanInt = parseInt(quantity);
 
-    var actualPrice = pricefloat * quanInt;
+    var actualPrice = parseFloat(pricefloat * quanInt);
 
     if(typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
