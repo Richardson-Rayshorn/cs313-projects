@@ -21,7 +21,7 @@ $numres = $numval / $num;
             echo '</div>
             <div class="product-summary">'; echo $products[$i][$y++];
             echo '</div>
-            <div class="price"> $'; echo $products[$i][$y++];
+            <div class="price"> $'; echo (float)$products[$i][$y++];
             echo '</div>
             <a class="see-product btn waves-effect darken-text-2" data-id="'; 
             echo $data_id;
