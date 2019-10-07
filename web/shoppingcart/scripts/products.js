@@ -38,10 +38,10 @@ function addCart()
     var price = document.getElementById("price").innerHTML;
     var quantity = document.getElementById("quantity").value;
 
-    var priceint = parseInt(price); 
+    var pricefloat = parseFloat(price); 
     var quanInt = parseInt(quantity);
 
-    var actualPrice = priceint * quanInt;
+    var actualPrice = pricefloat * quanInt;
 
     if(typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
