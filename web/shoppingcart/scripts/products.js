@@ -39,7 +39,7 @@ function addCart()
     var quantity = document.getElementById("quantity").value;
 
     var pricefloat = parseFloat(price); 
-    var quanInt = parseInt(quantity);
+    var quanInt = parseFloat(quantity);
 
     var actualPrice = parseFloat(pricefloat * quanInt);
 
