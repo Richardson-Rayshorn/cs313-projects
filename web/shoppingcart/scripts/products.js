@@ -67,9 +67,3 @@ function order()
     xmlhttp.open("GET", "checkout.php", true);
     xmlhttp.send();
 }
-
-function confirm()
-{
-    xmlhttp.open("POST", "confirmation.php", true);
-    xmlhttp.send();
-}
