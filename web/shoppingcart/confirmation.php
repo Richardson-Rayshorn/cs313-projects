@@ -2,11 +2,12 @@
     $fnameErr = $lnameErr = $emailErr = $cityErr = $countryErr = $addressErr = $numberErr = "";
     $fname = $lname = $email = $city = $country = $address = $number = "";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    if (isset($_POST["submit"]))
     {
         if (empty($_POST["first_name"]))
         {
             $fnameErr = "Required";
+            exit();
         }
         else 
         {
