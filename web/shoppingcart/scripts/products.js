@@ -70,7 +70,7 @@ function order()
 
 function validateMyForm()
 {
-    var x = document.getElementById("first_name").value;
+    var x = document.forms["checkout"]["first_name"].value;
     alert(x);
     if(x = "")
     {
