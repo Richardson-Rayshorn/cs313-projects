@@ -35,9 +35,9 @@
                                     echo '</tr>';
                     }
 
-                    echo '
-                                    </table>
-                                </div>
-                            </div>';
+    echo '
+                    </table>
+                </div>
+            </div>';
 
  session_unset();
