@@ -4,8 +4,9 @@
 
     if (isset($_POST["submit"]))
     {
-        if (empty($_POST["first_name"]))
+        if (empty($_POST["first_name"]) || empty($_POST["last_name"]))
         {
+            header(“location: ./checkout.php”);
             $fnameErr = "Required";
         }
         else 
