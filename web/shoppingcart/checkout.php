@@ -4,7 +4,7 @@ echo '
     <h2>Checkout</h2>
     <p>Please fill in an address below to ship to!</p>
     <div class="row">
-        <form name="checkout" action="'; echo htmlspecialchars("confirmation.php"); echo'" class="col s12" onsubmit="return validateMyForm()" method="post">
+        <form name="checkout" action="'; echo htmlspecialchars("confirmation.php"); echo'" class="col s12" onsubmit="return validateMyForm(this)" method="post">
             <div class="row">
                 <div class="input-field col s4">
                     <input id="first_name" type="text" class="validate" name="first_name">

@@ -68,8 +68,9 @@ function order()
     xmlhttp.send();
 }
 
-function validateMyForm()
+function validateMyForm(e)
 {
+    e.preventDefault();
     var x = document.forms["checkout"]["first_name"].value;
     alert(x);
     if(x = "")
