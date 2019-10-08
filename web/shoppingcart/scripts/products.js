@@ -70,5 +70,11 @@ function order()
 
 function validateMyForm()
 {
-    document.forms['checkout'].submit();
+    var x = document.getElementById("first_name").value;
+
+    if(x = "")
+    {
+        alert("worked to stop submit");
+        return false;
+    }
 }

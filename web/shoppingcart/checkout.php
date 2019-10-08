@@ -4,7 +4,7 @@ echo '
     <h2>Checkout</h2>
     <p>Please fill in an address below to ship to!</p>
     <div class="row">
-        <form name="checkout" method="post" action="'; echo htmlspecialchars("confirmation.php"); echo'" class="col s12" onSubmit="event.preventDefault(); validateMyForm()">
+        <form name="checkout" method="post" action="'; echo htmlspecialchars("confirmation.php"); echo'" class="col s12" onSubmit="return validateMyForm()">
             <div class="row">
                 <div class="input-field col s4">
                     <input id="first_name" type="text" class="validate" name="first_name">
@@ -46,7 +46,7 @@ echo '
                     <label for="number">Telephone Number</label>
                 </div>
             </div>
-            <input type="button" name="submit" onClick="validateMyForm()">
+            <input type="submit" name="submit">
         </form>
     </div>
 ';
