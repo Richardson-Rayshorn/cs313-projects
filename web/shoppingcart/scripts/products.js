@@ -71,11 +71,16 @@ function order()
 function validateMyForm(e)
 {
     e.preventDefault();
-    var x = document.forms["checkout"]["first_name"].value;
-    alert(x);
-    if(x = "")
-    {
-        alert("worked to stop submit");
-        return false;
-    }
+    var fname = document.forms["checkout"]["first_name"].value;
+    var lname = document.forms["checkout"]["last_name"].value;
+    var email = document.forms["checkout"]["email"].value;
+    var city = document.forms["checkout"]["city"].value;
+    var country = document.forms["checkout"]["country"].value;
+    var address = document.forms["checkout"]["address"].value;
+    var number = document.forms["checkout"]["number"].value;
+    
+    xmlhttp.open("POST", "confirmation.php", true);
+    xmlhttp.send("fname=" + fname + "&lname=" + lname + "&email=" 
+                    + email + "&city=" + city + "&country=" + country
+                    + "&address=" + address + "&number=" + number);
 }
