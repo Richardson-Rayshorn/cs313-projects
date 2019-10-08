@@ -1,6 +1,41 @@
 <?php
+$urlLink = $_SERVER["PHP_SELF"];
 
-$urlLink = "confirmation.php";
+if (isset($_POST["submit"]))
+{
+    if (empty($_POST["first_name"]))
+    {
+        $fnameErr = "Required";
+    }
+    else if (empty($_POST["last_name"]))
+    {
+        $lnameErr = "Required";
+    }
+    else if (empty($_POST["email"]))
+    {
+        $emailErr = "Required";
+    }
+    else if (empty($_POST["city"]))
+    {
+        $cityErr = "Required";
+    }
+    else if (empty($_POST["country"]))
+    {
+        $countryErr = "Required";
+    }
+    else if (empty($_POST["address"]))
+    {
+        $addressErr = "Required";
+    }
+    else if (empty($_POST["number"]))
+    {
+        $numberErr = "Required";
+    }
+    // else 
+    // {
+    //     $number = test_input($_POST["number"]);
+    // }
+}
 echo '
     <h2>Checkout</h2>
     <p>Please fill in an address below to ship to!</p>

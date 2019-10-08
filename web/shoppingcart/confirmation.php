@@ -7,7 +7,6 @@
         if (empty($_POST["first_name"]))
         {
             $fnameErr = "Required";
-            exit();
         }
         else 
         {
