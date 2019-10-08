@@ -79,6 +79,7 @@ function validateMyForm(e)
     var number = document.forms["checkout"]["number"].value;
     
     xmlhttp.open("POST", "confirmation.php", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("fname=" + fname + "&lname=" + lname + "&email=" 
                     + email + "&city=" + city + "&country=" + country
                     + "&address=" + address + "&number=" + number);
