@@ -39,3 +39,5 @@
                                     </table>
                                 </div>
                             </div>';
+
+ session_unset();
