@@ -21,7 +21,8 @@ function seeProduct(e)
     xmlhttp.send();
 }
 
-function navigation(e){
+function navigation(e)
+{
     var i = 0; 
     for(; i <= anchor.length; i++){
         if(anchor[i].id === e.id){
@@ -43,10 +44,14 @@ function addCart()
 
     var actualPrice = parseFloat(pricefloat * quanInt);
 
-    if(typeof(Storage) !== "undefined") {
-        if (sessionStorage.clickcount) {
+    if(typeof(Storage) !== "undefined") 
+    {
+        if (sessionStorage.clickcount) 
+        {
         sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-        } else {
+        } 
+        else 
+        {
         sessionStorage.clickcount = 0;
         }
         var clickcounter = sessionStorage.clickcount;
@@ -83,4 +88,15 @@ function validateMyForm(e)
     xmlhttp.send("fname=" + fname + "&lname=" + lname + "&email=" 
                     + email + "&city=" + city + "&country=" + country
                     + "&address=" + address + "&number=" + number);
+}
+
+function resetCount()
+{
+    if(typeof(Storage) !== "undefined") 
+    {
+        if (sessionStorage.clickcount) 
+        {
+            sessionStorage.clickcount = 0;
+        }
+    }
 }

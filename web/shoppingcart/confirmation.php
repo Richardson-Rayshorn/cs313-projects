@@ -8,13 +8,13 @@
     <p> Below are the products you have order and your confirmed address<p>
     ';
 
-    echo  $_POST["fname"] . " " . $_POST["lname"] . "<br>";
+    echo $_POST["fname"] . " " . $_POST["lname"] . "<br>";
     echo $_POST["email"] . " " . $_POST["number"] . "<br>";
     echo $_POST["address"] . " " . $_POST["city"] . "<br>";
     echo $_POST["country"] . "<br>";
 
     echo '
-        <div class="row">
+        <div class="row" onload="resetCount()">
             <div class="col s12 m12 l12">
                 <table>
                     <tr>
