@@ -2,6 +2,95 @@
     $fnameErr = $lnameErr = $emailErr = $cityErr = $countryErr = $addressErr = $numberErr = "";
     $fname = $lname = $email = $city = $country = $address = $number = "";
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        if (empty($_POST["first_name"]))
+        {
+            $fnameErr = "Required";
+        }
+        else 
+        {
+            $fname = test_input($_POST["first_name"]);
+        }
+
+        if (empty($_POST["last_name"]))
+        {
+            $lnameErr = "Required";
+        }
+        else 
+        {
+            $lname = test_input($_POST["last_name"]);
+        }
+
+        if (empty($_POST["email"]))
+        {
+            $emailErr = "Required";
+        }
+        else 
+        {
+            $email = test_input($_POST["email"]);
+        }
+
+        if (empty($_POST["city"]))
+        {
+            $cityErr = "Required";
+        }
+        else 
+        {
+            $city = test_input($_POST["city"]);
+        }
+
+        if (empty($_POST["country"]))
+        {
+            $countryErr = "Required";
+        }
+        else 
+        {
+            $country = test_input($_POST["country"]);
+        }
+
+        if (empty($_POST["address"]))
+        {
+            $addressErr = "Required";
+        }
+        else 
+        {
+            $address = test_input($_POST["address"]);
+        }
+
+        if (empty($_POST["number"]))
+        {
+            $numberErr = "Required";
+        }
+        else 
+        {
+            $number = test_input($_POST["number"]);
+        }
+    }
+
+    function test_input($data) 
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -44,15 +133,9 @@
     <footer>
     <div class="container">
       <nav>
-        <ul>';
-        for($i = 0; $i < $arr_length; $i++) {
-          echo '<li><a class="anchorTag" id="'; 
-          echo $menu_links[$i]; 
-          echo '" onClick="navigation(this)">';
-          echo $menu_links[$i]; 
-          echo '</a></li>';
-        }
-        echo '</ul>
+        <ul>
+            <li><a href="./index.php">Product</a></li>
+        </ul>
       </nav>
     </div>
     <script src="./scripts/products.js"></script>
