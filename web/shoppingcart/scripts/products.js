@@ -70,6 +70,5 @@ function order()
 
 function validateMyForm()
 {
-    returnToPreviousPage();
     return false;
 }
