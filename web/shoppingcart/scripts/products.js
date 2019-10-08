@@ -67,3 +67,9 @@ function order()
     xmlhttp.open("GET", "checkout.php", true);
     xmlhttp.send();
 }
+
+function validateMyForm()
+{
+    returnToPreviousPage();
+    return false;
+}

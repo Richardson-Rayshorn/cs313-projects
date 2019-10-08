@@ -39,7 +39,7 @@ echo '
         <a href="#" class="btn waves-effect darken-text-2" onClick="browse()">Add More</a> 
     </div>
     <div class="col s12 m4 l4">
-        <a href="./checkout.php" class="btn waves-effect darken-text-2" onClick="order()">Order</a> 
+        <a href="#" class="btn waves-effect darken-text-2" onClick="order()">Order</a> 
     </div>
 </div>';
 
