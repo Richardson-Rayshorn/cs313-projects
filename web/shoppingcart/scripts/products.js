@@ -70,5 +70,6 @@ function order()
 
 function validateMyForm()
 {
+    alert("calling validate");
     return true;
 }
