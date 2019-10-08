@@ -70,5 +70,5 @@ function order()
 
 function validateMyForm()
 {
-    return false;
+    return true;
 }
