@@ -88,6 +88,8 @@ function validateMyForm(e)
     xmlhttp.send("fname=" + fname + "&lname=" + lname + "&email=" 
                     + email + "&city=" + city + "&country=" + country
                     + "&address=" + address + "&number=" + number);
+
+    console.log(sessionStorage.clickcount);
 }
 
 function resetCount()
@@ -99,4 +101,6 @@ function resetCount()
             sessionStorage.clickcount = 0;
         }
     }
+
+    console.log(sessionStorage.clickcount);
 }
