@@ -64,5 +64,6 @@ function browse()
 
 function order()
 {
-    echo("Confirmation page reached");
+    xmlhttp.open("GET", "checkout.php", true);
+    xmlhttp.send();
 }
