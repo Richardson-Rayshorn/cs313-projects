@@ -31,10 +31,10 @@ if (isset($_POST["submit"]))
     {
         $numberErr = "Required";
     }
-    // else 
-    // {
-    //     $number = test_input($_POST["number"]);
-    // }
+    else 
+    {
+        $urlLink = "confirmation.php";
+    }
 }
 echo '
     <h2>Checkout</h2>
