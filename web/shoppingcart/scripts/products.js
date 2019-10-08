@@ -70,7 +70,6 @@ function order()
 
 function validateMyForm(e)
 {
-    e.preventDefault();
     var fname = document.forms["checkout"]["first_name"].value;
     var lname = document.forms["checkout"]["last_name"].value;
     var email = document.forms["checkout"]["email"].value;
