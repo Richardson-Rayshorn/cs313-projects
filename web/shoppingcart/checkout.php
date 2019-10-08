@@ -47,7 +47,7 @@ echo '
                     <label for="number">Telephone Number</label>
                 </div>
             </div>
-            <input type="submit" name="submit" onClick="confirm()">
+            <input name="submit" onClick="confirm()">
         </form>
     </div>
 ';
