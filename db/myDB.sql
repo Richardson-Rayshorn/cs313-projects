@@ -85,6 +85,7 @@ INSERT INTO offerings (id, offerings_name, offerings_description, interest) VALU
 'Money given to you by Bank of SVG', 6),
 (2, 'Loan', 
 'Money given to you by First SVG Bank', 4),
+-- new updated items
 (3, 'Insurance Policy',
 'Insurance policy from Sentry Insurance'),
 (4, 'Insurance Policy',
