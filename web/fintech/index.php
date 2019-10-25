@@ -1,5 +1,6 @@
-<?php include_once "header.php"; ?>
-    <main>
+<?php include_once "header.php"; 
+    $title = "Home";
+    echo '<main>
         <section class="jumbotron">
             <section>
                 <h2>Welcome to fintech</h2>
@@ -7,5 +8,6 @@
                 <a href="/fintech/search.php">Learn More</a>
             </section>
         </section>
-    </main>
-<?php include_once "footer.php"; ?>
+    </main>';
+
+include_once "footer.php"; ?>
