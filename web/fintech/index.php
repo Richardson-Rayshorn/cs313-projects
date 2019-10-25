@@ -4,7 +4,7 @@
             <section>
                 <h2>Welcome to fintech</h2>
                 <p>Find the right financial aid for you</p>
-                <a href="/search.php">Learn More</a>
+                <a href="/fintech/search.php">Learn More</a>
             </section>
         </section>
     </main>
