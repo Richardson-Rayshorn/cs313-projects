@@ -1,5 +1,6 @@
-<?php include_once "header.php"; 
-    $title = "Home";
+<?php 
+$title = "Home";
+include_once "header.php"; 
     echo '<main>
         <section class="jumbotron">
             <section>
