@@ -23,6 +23,7 @@ include_once "header.php";
         the search -->';
         foreach ($business as $rows)
         {
+            echo $rows['types.types_name'] . ' ' . $rows['offerings.offerings_name'];
             if ($type == $rows['types.types_name'] && 
                     $offering == $rows['offerings.offerings_name'])
             {
