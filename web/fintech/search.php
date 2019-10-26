@@ -26,7 +26,6 @@ include_once "header.php";
                        }
                   echo '    
                     </select>
-                <span id="typeErr" class="error">*</span>
                 <label for="types">What type of services are you looking for?</label>
             </div>
             <div class="input-field col s4">
