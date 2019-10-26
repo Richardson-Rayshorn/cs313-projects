@@ -12,7 +12,8 @@ include_once "header.php";
     $offerings->execute();
     $offerings_load = $offerings->fetchAll(PDO::FETCH_ASSOC);
 
-    echo '<form action="">
+    $link = htmlspecialchars("./business.php");
+    echo '<form action="'; echo $link; echo '">
         <div class="row">
             <div class="input-field col s4">
                     <select name="types" id="types">
@@ -39,7 +40,7 @@ include_once "header.php";
                             echo '<option value="'; echo $rows['offerings_name'];
                             echo'">'; echo $rows['offerings_name']; echo'</option>';
                         }
-                        echo '<option value=""></option>
+                        echo '
                     </select>
                 <span id="offeringErr" class="error">*</span>
                 <label for="offerings">Pick the offerings you are looking for!</label>
