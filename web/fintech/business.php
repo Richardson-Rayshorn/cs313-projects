@@ -39,6 +39,7 @@ include_once "header.php";
                     <p>';
                     echo $rows['offerings_name'];
                     echo '</p>
+                    <a class="btn" onClick="">Learn More</a>
                 </div>';
             }
         }
