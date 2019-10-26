@@ -6,6 +6,14 @@
 -- INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
 -- INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
 
+-- SELECT types.types_name, offerings.offerings_name,
+-- institutions.company_name, institutions.company_description
+-- FROM ((((institute_types
+-- INNER JOIN types ON institute_types.types_id = types.id)
+-- INNER JOIN institutions ON institute_types.institutions_id = institutions.id)
+-- INNER JOIN institute_offerings ON institutions.id = institute_offerings.institutions_id)
+-- INNER JOIN offerings ON institute_offerings.offerings_id = offerings.id);
+
 CREATE TABLE types (
     id SERIAL PRIMARY KEY,
     types_name VARCHAR(80) NOT NULL,
