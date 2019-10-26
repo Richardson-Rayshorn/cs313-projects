@@ -23,15 +23,23 @@ include_once "header.php";
         the search -->';
         foreach ($business as $rows)
         {
-            // echo $rows['types_name'] . ' ' . $rows['offerings_name'];
             if ($type == $rows['types_name'] && 
                     $offering == $rows['offerings_name'])
             {
-
-                echo $rows['types_name'] . ' ' . $rows['offerings_name'];
-                // <div class="col sm12">
-
-                // </div>
+                echo '<div class="col sm12">
+                    <h3>';
+                    echo $rows['company_name'];
+                    echo '</h3>
+                    <p>';
+                    echo $rows['company_description'];
+                    echo '</p>
+                    <p>';
+                    echo $rows['types_name'];
+                    echo '</p>
+                    <p>';
+                    echo $rows['offerings_name'];
+                    echo '</p>
+                </div>';
             }
         }
     echo '</div>';
