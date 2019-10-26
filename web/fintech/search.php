@@ -1,14 +1,25 @@
 <?php 
+require_once "dbConnect.php";
 $title = "Search";
 include_once "header.php";
     
+    $types = $db->prepare('SELECT DISTINCT * FROM types WHERE types_name=:types_name');
+    $types->bindValue(':types_name', $types_name, PDO::PARAM_INT);
+    $types->execute();
+
+
     echo '<form action="">
         <div class="row">
             <div class="input-field col s4">
                     <select name="types" id="types">
                         <!-- pass the types name from the table in the 
-                        database -->
-                        <option value=""></option>
+                        database -->';
+                       while ( $rows = $types->fetchAll(PDO::FETCH_ASSOC))
+                       {
+                        echo '<option value="'; echo $rows[$types_name];
+                        echo'">'; echo $rows[$types_name]; echo'</option>';
+                       }
+                  echo '    
                     </select>
                 <span id="typeErr" class="error">*</span>
                 <label for="types">What type of services are you looking for?</label>

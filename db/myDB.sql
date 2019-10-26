@@ -87,9 +87,9 @@ INSERT INTO offerings (id, offerings_name, offerings_description, interest) VALU
 'Money given to you by First SVG Bank', 4),
 -- new updated items
 (3, 'Insurance Policy',
-'Insurance policy from Sentry Insurance'),
+'Insurance policy from Sentry Insurance',0),
 (4, 'Insurance Policy',
-'Insurance policy from General Insurance');
+'Insurance policy from General Insurance', 0);
 
 INSERT INTO institutions (id, company_name, company_description, 
 primary_contact_person, phone_number, company_address) VALUES
