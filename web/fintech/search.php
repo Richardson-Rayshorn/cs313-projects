@@ -13,7 +13,7 @@ include_once "header.php";
     $offerings_load = $offerings->fetchAll(PDO::FETCH_ASSOC);
 
     $link = htmlspecialchars("./business.php");
-    echo '<form action="'; echo $link; echo '">
+    echo '<form method="GET" ction="'; echo $link; echo '">
         <div class="row">
             <div class="input-field col s4">
                     <select name="types" id="types">
