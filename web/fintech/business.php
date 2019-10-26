@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once("dbConnect.php");
 $db = get_db();
 $title = "Business Listing";
