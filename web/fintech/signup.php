@@ -5,44 +5,44 @@ $db = get_db();
 
 include_once "header.php";
 
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $password_valid = $_POST['password_valid'];
-    $address = $_POST['address'];
-    $number = $_POST['number'];
-    $background = $_POST['background'];
-    $check = FALSE;
+    // $first_name = $_POST['first_name'];
+    // $last_name = $_POST['last_name'];
+    // $email = $_POST['email'];
+    // $username = $_POST['username'];
+    // $password = $_POST['password'];
+    // $password_valid = $_POST['password_valid'];
+    // $address = $_POST['address'];
+    // $number = $_POST['number'];
+    // $background = $_POST['background'];
+    // $check = FALSE;
 
 
-    $user = $db->prepare('SELECT email, username FROM user');
-    $user->execute();
-    $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
+    // $user = $db->prepare('SELECT email, username FROM user');
+    // $user->execute();
+    // $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($user_check as $rows)
-    {
-        if ($rows['email'] == $email || $row['username'] == $username)
-        {
-            $check = TRUE;
-        }
-    }
+    // foreach ($user_check as $rows)
+    // {
+    //     if ($rows['email'] == $email || $row['username'] == $username)
+    //     {
+    //         $check = TRUE;
+    //     }
+    // }
 
-    if ($check)
-    {
-        echo '<span id="">Username and Email exist!</span>';
-    }
-    else 
-    {
-        $sqlex = "INSERT INTO user (first_name, last_name, email,
-        username, user_password, user_address, background,
-        phone_number, roles) VALUES (" . $first_name . $last_name . 
-        $email . $username . $password . $address . $background . $number .
-        " user)";
-        // $db->execute();
-        echo $sqlex;
-    }
+    // if ($check)
+    // {
+    //     echo '<span id="">Username and Email exist!</span>';
+    // }
+    // else 
+    // {
+    //     $sqlex = "INSERT INTO user (first_name, last_name, email,
+    //     username, user_password, user_address, background,
+    //     phone_number, roles) VALUES (" . $first_name . $last_name . 
+    //     $email . $username . $password . $address . $background . $number .
+    //     " user)";
+    //     // $db->execute();
+    //     echo $sqlex;
+    // }
     
     echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
     echo '">
