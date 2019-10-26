@@ -8,6 +8,10 @@ include_once "header.php";
     $types->execute();
     $types_load = $types->fetchAll(PDO::FETCH_ASSOC);
 
+    $offerings = $db->prepare('SELECT DISTINCT offerings_name FROM offerings');
+    $offerings->execute();
+    $offerings_load = $offerings->fetchAll(PDO::FETCH_ASSOC);
+
     echo '<form action="">
         <div class="row">
             <div class="input-field col s4">
@@ -29,14 +33,19 @@ include_once "header.php";
                         <!-- pass the offerings name from the table in the 
                         database because each business will have its own offering
                         I will have to narrow the duplicates down to single names
-                        Use Select distinct to prevent selected duplicates-->
-                        <option value=""></option>
+                        Use Select distinct to prevent selected duplicates-->';
+                        foreach ($offerings_load as $rows)
+                        {
+                            echo '<option value="'; echo $rows['offerings_name'];
+                            echo'">'; echo $rows['offerings_name']; echo'</option>';
+                        }
+                        echo '<option value=""></option>
                     </select>
                 <span id="offeringErr" class="error">*</span>
                 <label for="offerings">Pick the offerings you are looking for!</label>
             </div>
         </div>
-        <input type="submit" class="btn" name="submit">
+        <input type="submit" class="btn" name="submit" placeholder="Search">
     </form>';
 
 include_once "footer.php" ; ?>
