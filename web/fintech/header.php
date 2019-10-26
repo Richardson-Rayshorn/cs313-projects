@@ -29,7 +29,9 @@
       <div class="nav-wrapper">
         <ul id="nav-mobile" class="right hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
-          echo '<li><a class="anchorTag" id="'; 
+          echo '<li><a href="';
+          echo $menu_links[$i];
+          echo '.php" class="anchorTag" id="'; 
           echo $menu_links[$i]; 
           echo '">';
           echo $menu_links[$i]; 
