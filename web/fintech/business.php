@@ -7,8 +7,8 @@ include_once "header.php";
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
 
-    $query = $db->prepare('SELECT types.types_name, offerings.offerings_name,
-    institutions.company_name, institutions.company_description
+    $query = $db->prepare('SELECT types_name, offerings_name,
+    company_name, company_description
     FROM ((((institute_types
     INNER JOIN types ON institute_types.types_id = types.id)
     INNER JOIN institutions ON institute_types.institutions_id = institutions.id)
@@ -23,7 +23,7 @@ include_once "header.php";
         the search -->';
         foreach ($business as $rows)
         {
-            echo $rows['types.types_name'] . ' ' . $rows['offerings.offerings_name'];
+            echo $rows['types_name'] . ' ' . $rows['offerings_name'];
             if ($type == $rows['types.types_name'] && 
                     $offering == $rows['offerings.offerings_name'])
             {
