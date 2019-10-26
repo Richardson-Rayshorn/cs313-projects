@@ -41,7 +41,6 @@ include_once "header.php";
                         }
                         echo '
                     </select>
-                <span id="offeringErr" class="error">*</span>
                 <label for="offerings">Pick the offerings you are looking for!</label>
             </div>
         </div>
