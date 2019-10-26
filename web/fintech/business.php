@@ -30,13 +30,13 @@ include_once "header.php";
                     <h3>';
                     echo $rows['company_name'];
                     echo '</h3>
-                    <p>';
+                    <p> <span> Description</span> <br/>';
                     echo $rows['company_description'];
                     echo '</p>
-                    <p>';
+                    <p> <span> Business type</span> <br/>';
                     echo $rows['types_name'];
                     echo '</p>
-                    <p>';
+                    <p> <span> Offerings</span> <br/>';
                     echo $rows['offerings_name'];
                     echo '</p>
                     <a class="btn" onClick="">Learn More</a>
