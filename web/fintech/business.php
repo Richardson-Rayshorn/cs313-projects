@@ -4,8 +4,8 @@ $db = get_db();
 $title = "Business Listing";
 include_once "header.php";
 
-    $type = $GET['types'];
-    $offering = $GET['offerings'];
+    $type = $_GET["types"];
+    $offering = $_GET["offerings"];
 
     echo $type . ' ' . $offering;
 
