@@ -1,11 +1,12 @@
 <?php 
-require_once "dbConnect.php";
+require_once("dbConnect.php");
+$db = get_db();
 $title = "Search";
 include_once "header.php";
     
-    $types = $db->prepare('SELECT DISTINCT * FROM types WHERE types_name=:types_name');
-    $types->execute(array(':types_name' => $types_name));
-
+    $types = $db->prepare('SELECT DISTINCT types_name FROM types');
+    $types->execute();
+    $types_load = $types->fetchAll(PDO::FETCH_ASSOC);
 
     echo '<form action="">
         <div class="row">
@@ -13,10 +14,10 @@ include_once "header.php";
                     <select name="types" id="types">
                         <!-- pass the types name from the table in the 
                         database -->';
-                       foreach ($types as $rows)
+                       foreach ($types_load as $rows)
                        {
-                        echo '<option value="'; echo $rows[$types_name];
-                        echo'">'; echo $rows[$types_name]; echo'</option>';
+                        echo '<option value="'; echo $rows['types_name'];
+                        echo'">'; echo $rows['types_name']; echo'</option>';
                        }
                   echo '    
                     </select>
