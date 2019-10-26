@@ -3,8 +3,7 @@ require_once "dbConnect.php";
 $title = "Search";
 include_once "header.php";
     
-    $types = $db->prepare('SELECT DISTINCT * FROM types WHERE types_name=:types_name');
-    $types->bindValue(':types_name', $types_name, PDO::PARAM_INT);
+    $types = $db->prepare('SELECT DISTINCT types_name FROM types');
     $types->execute();
 
 
