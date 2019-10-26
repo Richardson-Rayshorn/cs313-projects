@@ -15,8 +15,8 @@ include_once "header.php";
                         database -->';
                        while ( $rows = $types->fetchAll(PDO::FETCH_ASSOC))
                        {
-                        echo '<option value="'; echo $rows[$types_name];
-                        echo'">'; echo $rows[$types_name]; echo'</option>';
+                        echo '<option value="'; echo $rows['types_name'];
+                        echo'">'; echo $rows['types_name']; echo'</option>';
                        }
                   echo '    
                     </select>
