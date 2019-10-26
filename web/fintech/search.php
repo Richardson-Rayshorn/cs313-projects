@@ -44,7 +44,7 @@ include_once "header.php";
                 <label for="offerings">Pick the offerings you are looking for!</label>
             </div>
         </div>
-        <input type="submit" class="btn" name="submit" placeholder="Search">
+        <input type="submit" class="btn" value="Search">
     </form>';
 
 include_once "footer.php" ; ?>
