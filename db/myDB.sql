@@ -22,6 +22,11 @@
 -- INNER JOIN institute_offerings ON institutions.id = institute_offerings.institutions_id)
 -- INNER JOIN offerings ON institute_offerings.offerings_id = offerings.id);
 
+-- CREATE TABLE temp(
+--     id SERIAL PRIMARY KEY,
+--     username VARCHAR(120) NOT NULL UNIQUE 
+-- );
+
 CREATE TABLE types (
     id SERIAL PRIMARY KEY,
     types_name VARCHAR(80) NOT NULL,
@@ -52,7 +57,7 @@ CREATE TABLE users (
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    username VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL UNIQUE,
     user_password VARCHAR(255) NOT NULL,
     user_address TEXT NOT NULL,
     background TEXT,

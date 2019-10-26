@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Signup</title>
-</head>
-<body>
-    <form action="">
+<?php 
+require_once("dbConnect.php");
+$db = get_db();
+
+include_once "header.php";
+
+    $user = $db->prepare();
+    
+    echo '<form action="">
         <div class="row">
             <div class="input-field col s4">
                 <input id="first_name" type="text" class="validate" name="first_name">
@@ -60,6 +59,7 @@
             </div>
         </div>
         <input type="submit" class="btn" name="submit">
-    </form>
-</body>
-</html>
+    </form>';
+
+include_once "footer.php";
+?>
