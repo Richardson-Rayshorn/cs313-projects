@@ -5,16 +5,16 @@ $db = get_db();
 
 include_once "header.php";
 
-    // $first_name = $_POST['first_name'];
-    // $last_name = $_POST['last_name'];
-    // $email = $_POST['email'];
-    // $username = $_POST['username'];
-    // $password = $_POST['password'];
-    // $password_valid = $_POST['password_valid'];
-    // $address = $_POST['address'];
-    // $number = $_POST['number'];
-    // $background = $_POST['background'];
-    // $check = FALSE;
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $password_valid = $_POST['password_valid'];
+    $address = $_POST['address'];
+    $number = $_POST['number'];
+    $background = $_POST['background'];
+    $check = FALSE;
 
 
     // $user = $db->prepare('SELECT email, username FROM user');
