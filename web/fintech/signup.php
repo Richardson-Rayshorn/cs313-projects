@@ -32,6 +32,7 @@ ini_set("display_errors", 1);
             if ($rows['email'] == $email || $rows['username'] == $username)
             {
                 echo '<span id="">Username and Email exist!</span>';
+                die();
             }
             else 
             {
