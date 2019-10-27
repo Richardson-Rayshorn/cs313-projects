@@ -33,10 +33,7 @@ ini_set("display_errors", 1);
             if ($rows['email'] == $email || $rows['username'] == $username)
             {
                 echo '<span id="">Username and Email exist! <a href="./signup.php"> Try Again</a></span>';
-                
                 die();
-                $stay = "./signup.php";
-                header("Location: $stay");
             }
             else 
             {
