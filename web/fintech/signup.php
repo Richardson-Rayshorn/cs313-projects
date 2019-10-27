@@ -5,6 +5,9 @@ $db = get_db();
 
 include_once "header.php";
 
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
     $first_name = htmlspecialchars($_POST['first_name']);
     $last_name = htmlspecialchars($_POST['last_name']);
     $email = htmlspecialchars($_POST['email']);
