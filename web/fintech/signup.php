@@ -16,7 +16,6 @@ include_once "header.php";
     $background = $_POST['background'];
     $check;
 
-    echo $check . $username;
     $user = $db->prepare('SELECT email, username FROM users');
     $user->execute();
     $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
@@ -25,28 +24,18 @@ include_once "header.php";
     {
         if ($rows['email'] == $email || $row['username'] == $username)
         {
-            $check = TRUE;
+            echo '<span id="">Username and Email exist!</span>';
         }
         else 
         {
-            $check = FALSE;    
+            $sqlex = "INSERT INTO user (first_name, last_name, email,
+            username, user_password, user_address, background,
+            phone_number, roles) VALUES (" . $first_name . $last_name . 
+            $email . $username . $password . $address . $background . $number .
+            " user)";
+            // $db->execute();
+            echo $sqlex; 
         }
-    }
-
-    echo $check . $username;
-    if ($check === TRUE)
-    {
-        echo '<span id="">Username and Email exist!</span>';
-    }
-    elseif ($check === FALSE)
-    {
-        $sqlex = "INSERT INTO user (first_name, last_name, email,
-        username, user_password, user_address, background,
-        phone_number, roles) VALUES (" . $first_name . $last_name . 
-        $email . $username . $password . $address . $background . $number .
-        " user)";
-        // $db->execute();
-        echo $sqlex;
     }
     
     echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
