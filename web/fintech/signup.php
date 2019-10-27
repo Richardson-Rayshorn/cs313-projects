@@ -34,6 +34,8 @@ ini_set("display_errors", 1);
             if ($rows['email'] == $email || $rows['username'] == $username)
             {
                 $errCheck = TRUE;
+                $stay = "./signup.php";
+                header("Location: $stay");
                 die();
             }
             else 
