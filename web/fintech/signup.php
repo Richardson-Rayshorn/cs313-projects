@@ -16,9 +16,9 @@ include_once "header.php";
     $background = htmlspecialchars($_POST['background']);
     $check;
 
-    $user = $db->prepare('SELECT email, username FROM users');
-    $user->execute();
-    $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
+    // $user = $db->prepare('SELECT email, username FROM users');
+    // $user->execute();
+    // $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
     $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
             username, user_password, user_address, background,
