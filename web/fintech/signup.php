@@ -34,11 +34,11 @@ include_once "header.php";
     }
 
     echo $check . $username;
-    if ($check == TRUE)
+    if ($check === TRUE)
     {
         echo '<span id="">Username and Email exist!</span>';
     }
-    elseif ($check == FALSE)
+    elseif ($check === FALSE)
     {
         $sqlex = "INSERT INTO user (first_name, last_name, email,
         username, user_password, user_address, background,
