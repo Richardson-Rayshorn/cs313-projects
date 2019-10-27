@@ -17,7 +17,7 @@ include_once "header.php";
     $check = FALSE;
 
     echo $check . $username;
-    $user = $db->prepare('SELECT email, username FROM user');
+    $user = $db->prepare('SELECT email, username FROM users');
     $user->execute();
     $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
