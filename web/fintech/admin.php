@@ -32,7 +32,7 @@ ini_set("display_errors", 1);
         {
             if ($rows['email'] == $email || $rows['username'] == $username)
             {
-                $id = $rows['id'];
+                // $id = $rows['id'];
                 $user_update = $db->prepare('UPDATE users SET first_name=:first_name, last_name=:last_name, email=:email,
                 username=:username, user_password=:user_password, user_address=:user_address, background=:background,
                 phone_number=:phone_number, roles=:roles');
