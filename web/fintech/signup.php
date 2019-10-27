@@ -21,13 +21,13 @@ include_once "header.php";
     $user->execute();
     $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($user_check as $rows)
-    {
-        if ($rows['email'] == $email || $row['username'] == $username)
-        {
-            $check = TRUE;
-        }
-    }
+    // foreach ($user_check as $rows)
+    // {
+    //     if ($rows['email'] == $email || $row['username'] == $username)
+    //     {
+    //         $check = TRUE;
+    //     }
+    // }
 
     echo $check . $username;
     // if ($check)
