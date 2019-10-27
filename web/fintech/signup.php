@@ -22,36 +22,36 @@ ini_set("display_errors", 1);
         $address = htmlspecialchars($_POST['address']);
         $number = htmlspecialchars($_POST['number']);
         $background = htmlspecialchars($_POST['background']);
-    }
 
-    $user = $db->prepare('SELECT email, username FROM users');
-    $user->execute();
-    $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
+        $user = $db->prepare('SELECT email, username FROM users');
+        $user->execute();
+        $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($user_check as $rows)
-    {
-        if ($rows['email'] == $email || $rows['username'] == $username)
+        foreach ($user_check as $rows)
         {
-            echo '<span id="">Username and Email exist!</span>';
-        }
-        else 
-        {
-            $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
-            username, user_password, user_address, background,
-            phone_number, roles) VALUES (:first_name, :last_name, :email,
-            :username, :user_password, :user_address, :background, :phone_number, 
-            :roles)');
+            if ($rows['email'] == $email || $rows['username'] == $username)
+            {
+                echo '<span id="">Username and Email exist!</span>';
+            }
+            else 
+            {
+                $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
+                username, user_password, user_address, background,
+                phone_number, roles) VALUES (:first_name, :last_name, :email,
+                :username, :user_password, :user_address, :background, :phone_number, 
+                :roles)');
 
-            $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
-            $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
-            $user_update->bindValue(':email', $email, PDO::PARAM_STR);
-            $user_update->bindValue(':username', $username, PDO::PARAM_STR);
-            $user_update->bindValue(':user_password', $password, PDO::PARAM_STR);
-            $user_update->bindValue(':user_address', $address, PDO::PARAM_STR);
-            $user_update->bindValue(':background', $background, PDO::PARAM_STR);
-            $user_update->bindValue(':phone_number', $number, PDO::PARAM_STR);
-            $user_update->bindValue(':roles', "users", PDO::PARAM_STR);
-            $user_update->execute();
+                $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+                $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+                $user_update->bindValue(':email', $email, PDO::PARAM_STR);
+                $user_update->bindValue(':username', $username, PDO::PARAM_STR);
+                $user_update->bindValue(':user_password', $password, PDO::PARAM_STR);
+                $user_update->bindValue(':user_address', $address, PDO::PARAM_STR);
+                $user_update->bindValue(':background', $background, PDO::PARAM_STR);
+                $user_update->bindValue(':phone_number', $number, PDO::PARAM_STR);
+                $user_update->bindValue(':roles', "users", PDO::PARAM_STR);
+                $user_update->execute();
+            }
         }
     }
     
