@@ -8,6 +8,9 @@ include_once "header.php";
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+    $first_name = $last_name = $email = $username = $password = "";
+    $password_valid = $address = $number = $background = "";
+
     if(isset($_POST['submit']))
     {
         $first_name = htmlspecialchars($_POST['first_name']);
