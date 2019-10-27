@@ -54,7 +54,9 @@ ini_set("display_errors", 1);
         }
     }
 
-echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
+echo '
+<h3>Update user information</h3>
+<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
     echo '">
         <div class="row">
             <div class="input-field col s4">

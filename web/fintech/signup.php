@@ -58,7 +58,9 @@ include_once "header.php";
     }
     
     
-    echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
+    echo '
+        <h3>Signup</h3>
+    <form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
     echo '">
         <div class="row">
             <div class="input-field col s4">
