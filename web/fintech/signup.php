@@ -33,7 +33,8 @@ include_once "header.php";
             phone_number, roles) VALUES (" . $first_name . $last_name . 
             $email . $username . $password . $address . $background . $number .
             " user)";
-            $db->exec($sqlex);
+            $user = $db->prepare($sqlex);
+            $user->execute();
         }
     }
     
