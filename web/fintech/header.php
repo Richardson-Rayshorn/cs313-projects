@@ -1,5 +1,5 @@
 <?php
-    $menu_links = array('search', 'signup');
+    $menu_links = array('search', 'signup', 'admin');
     $arr_length = count($menu_links);
 
     echo '<!DOCTYPE html>
