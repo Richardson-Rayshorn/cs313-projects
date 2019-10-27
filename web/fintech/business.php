@@ -28,9 +28,9 @@ include_once "header.php";
                     $offering == $rows['offerings_name'])
             {
                 echo '<div class="col sm12">
-                    <h3>';
+                    <h5>';
                     echo $rows['company_name'];
-                    echo '</h3>
+                    echo '</h5>
                     <p> <span> Description</span> <br/>';
                     echo $rows['company_description'];
                     echo '</p>

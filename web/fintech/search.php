@@ -58,15 +58,17 @@ include_once "header.php";
         <input type="submit" class="btn" value="Search">
     </form>';
 
-    echo '<div class="row">
+    echo '\
+        <h4>List of businesses</h4>
+        <div class="row">
         <!-- Displays the businesses that match
         the search -->';
         foreach ($business as $rows)
         {
             echo '<div class="col sm12">
-                <h3>';
+                <h5>';
                 echo $rows['company_name'];
-                echo '</h3>
+                echo '</h5>
                 <p> <span> Description</span> <br/>';
                 echo $rows['company_description'];
                 echo '</p>
