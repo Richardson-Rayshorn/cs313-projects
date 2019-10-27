@@ -14,17 +14,10 @@ include_once "header.php";
     $address = htmlspecialchars($_POST['address']);
     $number = htmlspecialchars($_POST['number']);
     $background = htmlspecialchars($_POST['background']);
-    $check;
 
-    // $user = $db->prepare('SELECT email, username FROM users');
-    // $user->execute();
-    // $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
-
-    $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
-            username, user_password, user_address, background,
-            phone_number, roles) VALUES (:first_name, :last_name, :email,
-            :username, :user_password, :user_address, :background, :phone_number, 
-            "user")');
+    $user = $db->prepare('SELECT email, username FROM users');
+    $user->execute();
+    $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($user_check as $rows)
     {
@@ -39,6 +32,13 @@ include_once "header.php";
             // phone_number, roles) VALUES (:first_name, :last_name, :email,
             // :username, :user_password, :user_address, :background, :phone_number, 
             // 'user')";
+
+            $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
+            username, user_password, user_address, background,
+            phone_number, roles) VALUES (:first_name, :last_name, :email,
+            :username, :user_password, :user_address, :background, :phone_number, 
+            "user")');
+
             $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
             $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
             $user_update->bindValue(':email', $email, PDO::PARAM_STR);
