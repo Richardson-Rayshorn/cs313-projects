@@ -22,7 +22,6 @@ include_once "header.php";
 
     foreach ($user_check as $rows)
     {
-        echo $rows['email'] . $rows['username'];
         if ($rows['email'] == $email || $rows['username'] == $username)
         {
             echo '<span id="">Username and Email exist!</span>';
@@ -34,8 +33,7 @@ include_once "header.php";
             phone_number, roles) VALUES (" . $first_name . $last_name . 
             $email . $username . $password . $address . $background . $number .
             " user)";
-            // $db->execute();
-            echo $sqlex; 
+            $db->execute($sqlex);
         }
     }
     
