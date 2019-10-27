@@ -30,20 +30,20 @@ include_once "header.php";
     }
 
     echo $check . $username;
-    // if ($check)
-    // {
-    //     echo '<span id="">Username and Email exist!</span>';
-    // }
-    // else 
-    // {
-    //     $sqlex = "INSERT INTO user (first_name, last_name, email,
-    //     username, user_password, user_address, background,
-    //     phone_number, roles) VALUES (" . $first_name . $last_name . 
-    //     $email . $username . $password . $address . $background . $number .
-    //     " user)";
-    //     // $db->execute();
-    //     echo $sqlex;
-    // }
+    if ($check)
+    {
+        echo '<span id="">Username and Email exist!</span>';
+    }
+    else 
+    {
+        $sqlex = "INSERT INTO user (first_name, last_name, email,
+        username, user_password, user_address, background,
+        phone_number, roles) VALUES (" . $first_name . $last_name . 
+        $email . $username . $password . $address . $background . $number .
+        " user)";
+        // $db->execute();
+        echo $sqlex;
+    }
     
     echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
     echo '">
