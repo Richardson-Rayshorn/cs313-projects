@@ -5,15 +5,15 @@ $db = get_db();
 
 include_once "header.php";
 
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $password_valid = $_POST['password_valid'];
-    $address = $_POST['address'];
-    $number = $_POST['number'];
-    $background = $_POST['background'];
+    $first_name = htmlspecialchars($_POST['first_name']);
+    $last_name = htmlspecialchars($_POST['last_name']);
+    $email = htmlspecialchars($_POST['email']);
+    $username = htmlspecialchars($_POST['username']);
+    $password = htmlspecialchars($_POST['password']);
+    $password_valid = htmlspecialchars($_POST['password_valid']);
+    $address = htmlspecialchars($_POST['address']);
+    $number = htmlspecialchars($_POST['number']);
+    $background = htmlspecialchars($_POST['background']);
     $check;
 
     $user = $db->prepare('SELECT email, username FROM users');
@@ -28,12 +28,20 @@ include_once "header.php";
         }
         else 
         {
-            $sqlex = "INSERT INTO user (first_name, last_name, email,
+            $sqlex = "INSERT INTO users (first_name, last_name, email,
             username, user_password, user_address, background,
-            phone_number, roles) VALUES (" . $first_name . $last_name . 
-            $email . $username . $password . $address . $background . $number .
-            " user)";
+            phone_number, roles) VALUES (:first_name, :last_name, :email,
+            :username, :user_password, :user_address, :background, :phone_number, 
+            'user')";
             $user = $db->prepare($sqlex);
+            $user->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+            $user->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+            $user->bindValue(':email', $email, PDO::PARAM_STR);
+            $user->bindValue(':username', $username, PDO::PARAM_STR);
+            $user->bindValue(':user_password', $user_password, PDO::PARAM_STR);
+            $user->bindValue(':user_address', $user_address, PDO::PARAM_STR);
+            $user->bindValue(':background', $background, PDO::PARAM_STR);
+            $user->bindValue(':phone_number', $phone_number, PDO::PARAM_STR);
             $user->execute();
         }
     }
