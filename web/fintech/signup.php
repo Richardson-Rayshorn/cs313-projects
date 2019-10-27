@@ -26,14 +26,18 @@ include_once "header.php";
         {
             $check = TRUE;
         }
+        else 
+        {
+            $check = FALSE;    
+        }
     }
 
     echo $check . $username;
-    if ($check)
+    if ($check == TRUE)
     {
         echo '<span id="">Username and Email exist!</span>';
     }
-    else 
+    elseif ($check == FALSE)
     {
         $sqlex = "INSERT INTO user (first_name, last_name, email,
         username, user_password, user_address, background,
