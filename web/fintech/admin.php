@@ -35,9 +35,9 @@ ini_set("display_errors", 1);
                 $id = $rows['id'];
                 $user_update = $db->prepare("INSERT INTO users(first_name, last_name, email,
                 username, user_password, user_address, background,
-                phone_number, roles) WHERE id = $id VALUES (:first_name, :last_name, :email,
+                phone_number, roles) VALUES (:first_name, :last_name, :email,
                 :username, :user_password, :user_address, :background, :phone_number, 
-                :roles)");
+                :roles) WHERE id = $id ");
 
                 $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
                 $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
