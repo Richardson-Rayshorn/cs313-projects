@@ -24,7 +24,9 @@ include_once "header.php";
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
 
     $link = htmlspecialchars("./business.php");
-    echo '<form method="GET" action="'; echo $link; echo '">
+    echo '
+    <h3>Search</h3>
+    <form method="GET" action="'; echo $link; echo '">
         <div class="row">
             <div class="input-field col s4">
                     <select name="types" id="types">
