@@ -88,7 +88,7 @@ include_once "header.php";
                 <label for="address">Address</label>
             </div>
             <div class="input-field col s6">
-                <input id="number" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" name="number">
+                <input id="number" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="number">
                 <span id="numberErr" class="error">*</span>
                 <label for="number">Telephone Number</label>
             </div>
