@@ -22,8 +22,8 @@ include_once "header.php";
 
     foreach ($user_check as $rows)
     {
-        echo $rows['email'] . $row['username'];
-        if ($rows['email'] == $email || $row['username'] == $username)
+        echo $rows['email'] . $rows['username'];
+        if ($rows['email'] == $email || $rows['username'] == $username)
         {
             echo '<span id="">Username and Email exist!</span>';
         }
