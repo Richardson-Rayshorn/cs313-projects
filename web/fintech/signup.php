@@ -12,7 +12,7 @@ ini_set("display_errors", 1);
     $password_valid = $address = $number = $background = "";
 
     $errCheck = FALSE;
-
+    echo $errCheck;
     if(isset($_POST['submit']))
     {
         $first_name = htmlspecialchars($_POST['first_name']);
@@ -59,8 +59,8 @@ ini_set("display_errors", 1);
             }
         }
     }
-    
-    if ($errCheck)
+    echo $errCheck;
+    if ($errCheck == TRUE)
     {
         echo '<span id="">Username and Email exist!</span>';
     }
