@@ -20,6 +20,12 @@ include_once "header.php";
     $user->execute();
     $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
+    $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
+            username, user_password, user_address, background,
+            phone_number, roles) VALUES (:first_name, :last_name, :email,
+            :username, :user_password, :user_address, :background, :phone_number, 
+            "user")');
+
     foreach ($user_check as $rows)
     {
         if ($rows['email'] == $email || $rows['username'] == $username)
@@ -33,11 +39,6 @@ include_once "header.php";
             // phone_number, roles) VALUES (:first_name, :last_name, :email,
             // :username, :user_password, :user_address, :background, :phone_number, 
             // 'user')";
-            $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
-            username, user_password, user_address, background,
-            phone_number, roles) VALUES (:first_name, :last_name, :email,
-            :username, :user_password, :user_address, :background, :phone_number, 
-            "user")');
             $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
             $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
             $user_update->bindValue(':email', $email, PDO::PARAM_STR);
