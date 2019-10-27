@@ -28,12 +28,16 @@ include_once "header.php";
         }
         else 
         {
-            $sqlex = "INSERT INTO users (first_name, last_name, email,
+            // $sqlex = "INSERT INTO users(first_name, last_name, email,
+            // username, user_password, user_address, background,
+            // phone_number, roles) VALUES (:first_name, :last_name, :email,
+            // :username, :user_password, :user_address, :background, :phone_number, 
+            // 'user')";
+            $user = $db->prepare('INSERT INTO users(first_name, last_name, email,
             username, user_password, user_address, background,
             phone_number, roles) VALUES (:first_name, :last_name, :email,
             :username, :user_password, :user_address, :background, :phone_number, 
-            'user')";
-            $user = $db->prepare($sqlex);
+            "user")');
             $user->bindValue(':first_name', $first_name, PDO::PARAM_STR);
             $user->bindValue(':last_name', $last_name, PDO::PARAM_STR);
             $user->bindValue(':email', $email, PDO::PARAM_STR);
