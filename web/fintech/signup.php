@@ -11,8 +11,7 @@ ini_set("display_errors", 1);
     $first_name = $last_name = $email = $username = $password = "";
     $password_valid = $address = $number = $background = "";
 
-    $errCheck = 0;
-    echo $errCheck;
+
     if(isset($_POST['submit']))
     {
         $first_name = htmlspecialchars($_POST['first_name']);
@@ -33,10 +32,11 @@ ini_set("display_errors", 1);
         {
             if ($rows['email'] == $email || $rows['username'] == $username)
             {
-                $errCheck = 1;
-                // $stay = "./signup.php";
-                // header("Location: $stay");
+                echo '<span id="">Username and Email exist! <a href="./signup"> Try Again</a></span>';
+                
                 die();
+                $stay = "./signup.php";
+                header("Location: $stay");
             }
             else 
             {
@@ -59,11 +59,7 @@ ini_set("display_errors", 1);
             }
         }
     }
-    echo $errCheck;
-    if ($errCheck == 1)
-    {
-        echo '<span id="">Username and Email exist!</span>';
-    }
+    
     
     echo '<form method="POST" action="'; echo htmlspecialchars($_SERVER["PHP_SELF"]);
     echo '">
