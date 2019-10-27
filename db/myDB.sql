@@ -135,3 +135,8 @@ INSERT INTO institute_offerings (offerings_id, institutions_id) VALUES
 (2, 2),
 (3, 3),
 (4, 4);
+
+INSERT INTO users (first_name, last_name, email, username,
+user_password, user_address, background, phone_number, roles)
+VALUES ('Rayshorn', 'Richardson', 'rayshorndc@gmail.com', 'rayshorn',
+'rayshorn', 'New Montrose', 'IT Technician', '784-527-0958', 'admin');
