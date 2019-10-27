@@ -24,13 +24,13 @@ ini_set("display_errors", 1);
         $number = htmlspecialchars($_POST['number']);
         $background = htmlspecialchars($_POST['background']);
 
-        $user = $db->prepare('SELECT id, email, username FROM users');
+        $user = $db->prepare('SELECT id, email FROM users');
         $user->execute();
         $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($user_check as $rows)
         {
-            if ($rows['email'] == $email || $rows['username'] == $username)
+            if ($rows['email'] == $email)
             {
                 $id = $rows['id'];
                 $user_update = $db->prepare("UPDATE users SET first_name=:first_name, last_name=:last_name,
