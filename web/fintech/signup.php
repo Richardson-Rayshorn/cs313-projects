@@ -14,6 +14,7 @@ include_once "header.php";
     $address = $_POST['address'];
     $number = $_POST['number'];
     $background = $_POST['background'];
+    $check;
 
     echo $check . $username;
     $user = $db->prepare('SELECT email, username FROM users');
