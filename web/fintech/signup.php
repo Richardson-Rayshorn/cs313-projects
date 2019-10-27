@@ -33,20 +33,20 @@ include_once "header.php";
             // phone_number, roles) VALUES (:first_name, :last_name, :email,
             // :username, :user_password, :user_address, :background, :phone_number, 
             // 'user')";
-            $user = $db->prepare('INSERT INTO users(first_name, last_name, email,
+            $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
             username, user_password, user_address, background,
             phone_number, roles) VALUES (:first_name, :last_name, :email,
             :username, :user_password, :user_address, :background, :phone_number, 
             "user")');
-            $user->bindValue(':first_name', $first_name, PDO::PARAM_STR);
-            $user->bindValue(':last_name', $last_name, PDO::PARAM_STR);
-            $user->bindValue(':email', $email, PDO::PARAM_STR);
-            $user->bindValue(':username', $username, PDO::PARAM_STR);
-            $user->bindValue(':user_password', $user_password, PDO::PARAM_STR);
-            $user->bindValue(':user_address', $user_address, PDO::PARAM_STR);
-            $user->bindValue(':background', $background, PDO::PARAM_STR);
-            $user->bindValue(':phone_number', $phone_number, PDO::PARAM_STR);
-            $user->execute();
+            $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+            $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+            $user_update->bindValue(':email', $email, PDO::PARAM_STR);
+            $user_update->bindValue(':username', $username, PDO::PARAM_STR);
+            $user_update->bindValue(':user_password', $user_password, PDO::PARAM_STR);
+            $user_update->bindValue(':user_address', $user_address, PDO::PARAM_STR);
+            $user_update->bindValue(':background', $background, PDO::PARAM_STR);
+            $user_update->bindValue(':phone_number', $phone_number, PDO::PARAM_STR);
+            $user_update->execute();
         }
     }
     
