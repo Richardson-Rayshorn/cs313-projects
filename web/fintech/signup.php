@@ -16,7 +16,7 @@ include_once "header.php";
     $background = $_POST['background'];
     $check = FALSE;
 
-
+    echo $check . $username;
     $user = $db->prepare('SELECT email, username FROM user');
     $user->execute();
     $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
@@ -29,6 +29,7 @@ include_once "header.php";
         }
     }
 
+    echo $check . $username;
     // if ($check)
     // {
     //     echo '<span id="">Username and Email exist!</span>';
