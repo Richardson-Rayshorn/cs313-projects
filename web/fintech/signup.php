@@ -8,15 +8,18 @@ include_once "header.php";
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-    $first_name = htmlspecialchars($_POST['first_name']);
-    $last_name = htmlspecialchars($_POST['last_name']);
-    $email = htmlspecialchars($_POST['email']);
-    $username = htmlspecialchars($_POST['username']);
-    $password = htmlspecialchars($_POST['password']);
-    $password_valid = htmlspecialchars($_POST['password_valid']);
-    $address = htmlspecialchars($_POST['address']);
-    $number = htmlspecialchars($_POST['number']);
-    $background = htmlspecialchars($_POST['background']);
+    if(isset($_POST['submit']))
+    {
+        $first_name = htmlspecialchars($_POST['first_name']);
+        $last_name = htmlspecialchars($_POST['last_name']);
+        $email = htmlspecialchars($_POST['email']);
+        $username = htmlspecialchars($_POST['username']);
+        $password = htmlspecialchars($_POST['password']);
+        $password_valid = htmlspecialchars($_POST['password_valid']);
+        $address = htmlspecialchars($_POST['address']);
+        $number = htmlspecialchars($_POST['number']);
+        $background = htmlspecialchars($_POST['background']);
+    }
 
     $user = $db->prepare('SELECT email, username FROM users');
     $user->execute();
@@ -30,12 +33,6 @@ ini_set("display_errors", 1);
         }
         else 
         {
-            // $sqlex = "INSERT INTO users(first_name, last_name, email,
-            // username, user_password, user_address, background,
-            // phone_number, roles) VALUES (:first_name, :last_name, :email,
-            // :username, :user_password, :user_address, :background, :phone_number, 
-            // 'user')";
-
             $user_update = $db->prepare('INSERT INTO users(first_name, last_name, email,
             username, user_password, user_address, background,
             phone_number, roles) VALUES (:first_name, :last_name, :email,
