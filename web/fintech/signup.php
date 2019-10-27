@@ -17,17 +17,17 @@ include_once "header.php";
     $check = FALSE;
 
 
-    // $user = $db->prepare('SELECT email, username FROM user');
-    // $user->execute();
-    // $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
+    $user = $db->prepare('SELECT email, username FROM user');
+    $user->execute();
+    $user_check = $user->fetchAll(PDO::FETCH_ASSOC);
 
-    // foreach ($user_check as $rows)
-    // {
-    //     if ($rows['email'] == $email || $row['username'] == $username)
-    //     {
-    //         $check = TRUE;
-    //     }
-    // }
+    foreach ($user_check as $rows)
+    {
+        if ($rows['email'] == $email || $row['username'] == $username)
+        {
+            $check = TRUE;
+        }
+    }
 
     // if ($check)
     // {
