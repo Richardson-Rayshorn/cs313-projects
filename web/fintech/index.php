@@ -5,9 +5,9 @@ include_once "header.php";
     echo '<main>
         <section class="jumbotron">
             <section>
-                <h2>Welcome to fintech</h2>
+                <h2>FUNDING YOUR FUTURE</h2>
                 <p>Find the right financial aid for you</p>
-                <a href="./search.php">Learn More</a>
+                <a class="btn" href="./search.php">Learn More</a>
             </section>
         </section>
     </main>';
