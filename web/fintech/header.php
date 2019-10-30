@@ -29,10 +29,10 @@ $link = htmlspecialchars("./business.php");
         <a href="./" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <div class="input-field row">
+            <div class="input-field">
                 <form method="GET" action="'; echo $link; echo'
-                  <input id="searchbox" type="search" required class="col sm9">
-                  <input type="submit" class="material-icons left col sm4" value="search"/>
+                  <input id="searchbox" type="search" required>
+                  <input type="submit" class="material-icons left" value="search"/>
                 </form>
             </div>
           </li>
