@@ -1,7 +1,5 @@
 <?php
-    $menu_links = array('search', 'signup', 'admin');
-    $arr_length = count($menu_links);
-
+$link = htmlspecialchars("./business.php");
     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -28,17 +26,17 @@
     <nav>
       <div class="nav-wrapper white">
         <a href="#!" class="brand-logo left">FundMine</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">';
-        for($i = 0; $i < $arr_length; $i++) {
-          echo '<li><a href="./';
-          echo $menu_links[$i];
-          echo '.php" class="anchorTag" id="'; 
-          echo $menu_links[$i]; 
-          echo '">';
-          echo $menu_links[$i]; 
-          echo '</a></li>';
-        }
-        echo '</ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <form method="GET" action"'; echo $link; echo'>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </li>
+        </ul>
       </div>
     </nav>
   </header>
