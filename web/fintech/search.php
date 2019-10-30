@@ -22,7 +22,7 @@ include_once "header.php";
     INNER JOIN offerings ON institute_offerings.offerings_id = offerings.id)');
     $query->execute();
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
-
+    echo $_SESSION["business_name"];
     $link = htmlspecialchars("./business.php");
     echo '
     <h3>Search</h3>

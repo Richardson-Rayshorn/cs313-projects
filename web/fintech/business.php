@@ -7,7 +7,8 @@ include_once "header.php";
 
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
-    $business_name = $_REQUEST["biz"];
+    $business_col = $_GET["biz"];
+    $_SESSION["business_name"] = $business_col;
 
     $query = $db->prepare('SELECT types_name, offerings_name,
     company_name, company_description
