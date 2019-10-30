@@ -22,7 +22,7 @@ $link = htmlspecialchars("./business.php");
       <title>'; echo $title; echo ' | Fintech</title>
     </head>
     <body>
-  <header>
+  <header class="white">
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo left">FundMine</a>
@@ -36,7 +36,7 @@ $link = htmlspecialchars("./business.php");
       </div>
     </nav>
     <nav>
-      <div class="nav-wrapper white">
+      <div class="nav-wrapper ">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="./signup">Signup</a></li>
         </ul>
