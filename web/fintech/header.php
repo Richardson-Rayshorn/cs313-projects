@@ -22,10 +22,9 @@ $link = htmlspecialchars("./business.php");
       <title>'; echo $title; echo ' | Fintech</title>
     </head>
     <body>
-  <header class="white">
-    <nav>
+  <header>
+    <nav id="dropdown1" class="dropdown-content">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo left">FundMine</a>
         <form>
           <div class="input-field">
             <input id="search" type="search" required>
@@ -36,8 +35,11 @@ $link = htmlspecialchars("./business.php");
       </div>
     </nav>
     <nav>
-      <div class="nav-wrapper ">
+      <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+            <i class="material-icons left">search</i></a></li>
           <li><a href="./signup">Signup</a></li>
         </ul>
       </div>
