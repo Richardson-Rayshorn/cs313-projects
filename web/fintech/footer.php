@@ -3,7 +3,7 @@
     </div>
     <footer>
     <div class="container">
-      <nav>
+      <nav grey darken-4>
         <ul>';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a class="anchorTag" id="'; 

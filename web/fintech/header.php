@@ -26,7 +26,7 @@
     <body>
   <header>
     <nav id="navbar">
-      <div class="nav-wrapper blue darken-4">
+      <div class="nav-wrapper white">
         <ul id="nav-mobile" class="right hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a href="./';
