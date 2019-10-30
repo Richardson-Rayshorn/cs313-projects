@@ -1,5 +1,6 @@
 <?php 
     echo '
+    </div>
     <footer>
     <div class="container">
       <nav grey darken-4>

@@ -5,6 +5,7 @@ $db = get_db();
 
 $title = "Business Listing";
 include_once "header.php";
+include_once "main.php";
 
 echo $_GET['compId'];
 echo '
