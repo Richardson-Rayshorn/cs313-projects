@@ -55,3 +55,9 @@ nav ul a, nav .brand-logo{
     padding-left: 0px !important;
     background: none !important;
 }
+
+header nav .nav-wrapper{
+    width: 95% !important;
+    margin: auto !important;
+    max-width: 1260px !important;
+}
