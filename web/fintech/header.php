@@ -30,8 +30,8 @@ $link = htmlspecialchars("./business.php");
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <div class="input-field">
-                <form method="GET" action="'; echo $link; echo'
-                  <input id="searchbox" type="search" required>
+                <form method="GET" action="'; echo $link; echo'>
+                  <input id="searchbox" type="search" required />
                   <input type="submit" class="material-icons left" value="search"/>
                 </form>
             </div>
