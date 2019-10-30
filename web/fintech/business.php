@@ -4,6 +4,7 @@ require_once("dbConnect.php");
 $db = get_db();
 $title = "Business Listing";
 include_once "header.php";
+include_once "main.php";
 
     $type = $_GET["types"];
     $offering = $_GET["offerings"];

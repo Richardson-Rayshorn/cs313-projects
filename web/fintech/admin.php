@@ -4,6 +4,7 @@ require_once("dbConnect.php");
 $db = get_db();
 
 include_once "header.php";
+include_once "main.php";
 
 // error_reporting(E_ALL);
 // ini_set("display_errors", 1);

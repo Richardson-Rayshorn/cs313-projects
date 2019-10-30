@@ -4,7 +4,7 @@ require_once("dbConnect.php");
 $db = get_db();
 $title = "Search";
 include_once "header.php";
-    
+include_once "main.php";
     $types = $db->prepare('SELECT DISTINCT types_name FROM types');
     $types->execute();
     $types_load = $types->fetchAll(PDO::FETCH_ASSOC);
