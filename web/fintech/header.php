@@ -32,7 +32,7 @@ $link = htmlspecialchars("./business.php");
             <div class="input-field">
                 <form method="GET" action="'; echo $link; echo'">
                   <input id="searchbox" type="search" required />
-                  <input type="submit" class="material-icons left" value="search"/>
+                  <input id="searchbutton" type="submit" class="material-icons left" value="search"/>
                 </form>
             </div>
           </li>
