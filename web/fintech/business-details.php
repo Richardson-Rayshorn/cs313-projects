@@ -1,4 +1,11 @@
 <?php
+session_start();
+require_once("dbConnect.php");
+$db = get_db();
+
+$title = "Business Listing";
+include_once "header.php";
+include_once "main.php";
 
 echo $_GET['compId'];
 echo '
@@ -13,3 +20,5 @@ business to their list of interest -->
     <p>number</p>
     <p>address</p>
 </div>';
+
+include_once "footer.php"; ?>
