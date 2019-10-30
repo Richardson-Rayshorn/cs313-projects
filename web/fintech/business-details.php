@@ -12,4 +12,4 @@ business to their list of interest -->
     <p>contact person</p>
     <p>number</p>
     <p>address</p>
-</div>
+</div>';
