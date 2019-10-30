@@ -28,7 +28,7 @@ include_once "header.php";
         {
             if ($type == $rows['types_name'] && 
                     $offering == $rows['offerings_name'] ||
-                    $business_name == $rows['company_name'])
+                    $_SESSION["business_name"] == $rows['company_name'])
             {
                 echo '<div class="col sm12">
                     <h5>';
