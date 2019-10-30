@@ -39,5 +39,4 @@ $link = htmlspecialchars("./business.php");
       </div>
     </nav>
   </header>
-  <div class="container">
     ';
