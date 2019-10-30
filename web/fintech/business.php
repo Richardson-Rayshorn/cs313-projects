@@ -20,7 +20,7 @@ include_once "header.php";
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
-    echo '<div class="row">
+    echo '<div id="ajax" class="row">
         <!-- Displays the businesses that match
         the search -->';
         foreach ($business as $rows)

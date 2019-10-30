@@ -7,9 +7,7 @@ $(document).ready(function(){
 
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                window.location.assign("./business.php");
-                xmlhttp.open("GET", "business.php?biz=" + searchValue, true);
-                xmlhttp.send();
+                
             }
           };
 
