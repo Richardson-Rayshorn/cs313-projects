@@ -16,6 +16,7 @@
     </div>
   </footer>
   <script src="./scripts/material.js"></script>
+  <script src="./scripts/custom.js"></script>
 </body>
 </html>
     ';
