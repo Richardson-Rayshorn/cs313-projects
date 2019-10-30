@@ -18,3 +18,8 @@ nav ul a, nav .brand-logo{
     width:30% !important;
     left: 70% !important;
 }
+
+.input-field input[type=search] ~ .mdi-navigation-close, 
+.input-field input[type=search] ~ .material-icons{
+    color: black !important;
+}
