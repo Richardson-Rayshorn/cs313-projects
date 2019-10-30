@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#searchId').click(function(){
-        var searchValue = $('#searchbox').value;
+        var searchValue = $('#searchbox').val();
         alert(searchValue);
     });
 });
