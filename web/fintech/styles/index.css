@@ -2,6 +2,10 @@ nav ul a, nav .brand-logo{
     color:black !important;
 }
 
+#back{
+    cursor:pointer;
+}
+
 .btn, .btn-large, .btn-small{
     background-color: #1565c0 !important;
 }
