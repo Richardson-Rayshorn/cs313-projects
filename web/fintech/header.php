@@ -37,8 +37,8 @@ $link = htmlspecialchars("./business.php");
       <div class="nav-wrapper white">
         <a href="#!" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+            <i class="material-icons left">search</i></a></li>
           <li><a href="./signup">Signup</a></li>
         </ul>
       </div>
