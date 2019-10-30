@@ -4,6 +4,8 @@ nav ul a, nav .brand-logo{
 
 #back{
     cursor:pointer;
+    position: relative;
+    top: 20px;
 }
 
 .btn, .btn-large, .btn-small{
