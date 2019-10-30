@@ -2,7 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
-$links = htmlspecialchars("./business-details.php");
+
 $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
@@ -20,12 +20,12 @@ include_once "main.php";
     INNER JOIN offerings ON institute_offerings.offerings_id = offerings.id)');
     $query->execute();
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
-
+    $links = htmlspecialchars("./business-details.php");
 
     echo '<div class="row">
         <!-- Displays the businesses that match
         the search -->
-        <a id="back">Return to Search</a>
+        <a id="back" href="./search.php">Return to Search</a>
         <h2>Search Results</h2>';
         foreach ($business as $rows)
         {
