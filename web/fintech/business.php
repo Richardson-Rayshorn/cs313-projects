@@ -11,8 +11,8 @@ include_once "main.php";
     $offering = $_GET["offerings"];
     $business_name = $_GET["biz"];
     
-    $query = $db->prepare('SELECT types_name, offerings_name,
-    company_name, company_description, institutions.id
+    $query = $db->prepare('SELECT institutions.id, types_name, offerings_name,
+    company_name, company_description
     FROM ((((institute_types
     INNER JOIN types ON institute_types.types_id = types.id)
     INNER JOIN institutions ON institute_types.institutions_id = institutions.id)
@@ -59,8 +59,7 @@ include_once "main.php";
                     )
             {
                 echo '<div class="col sm12 m6 l6">
-                    <form method="GET" action"';
-                        echo $links; echo'">
+                    <form method="GET" action"./business-details.php">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
                         echo '" name="compId"/>
