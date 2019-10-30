@@ -7,6 +7,7 @@ include_once "header.php";
 
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
+    $business_name = $_REQUEST["biz"];
 
     $query = $db->prepare('SELECT types_name, offerings_name,
     company_name, company_description
@@ -25,7 +26,8 @@ include_once "header.php";
         foreach ($business as $rows)
         {
             if ($type == $rows['types_name'] && 
-                    $offering == $rows['offerings_name'])
+                    $offering == $rows['offerings_name'] ||
+                    $business_name == $rows['company_name'])
             {
                 echo '<div class="col sm12">
                     <h5>';
