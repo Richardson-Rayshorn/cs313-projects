@@ -59,7 +59,7 @@ include_once "main.php";
                     )
             {
                 echo '<div class="col sm12 m6 l6">
-                    <form method="GET" action"./business-details.php">
+                    <form method="GET" action"/business-details.php">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
                         echo '" name="compId"/>
