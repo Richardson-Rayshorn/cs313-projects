@@ -34,7 +34,7 @@ $link = htmlspecialchars("./business.php");
                 <i id="searchId" class="material-icons left col sm4">search</i>
             </div>
           </li>
-          <li><a href="./signup">Signup</a></li>
+          <li><a href="./signup.pjp">Signup</a></li>
         </ul>
       </div>
     </nav>
