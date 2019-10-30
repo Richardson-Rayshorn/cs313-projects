@@ -6,6 +6,12 @@ nav ul a, nav .brand-logo{
     background-color: #1565c0 !important;
 }
 
+.jumbotron{
+    background-image:url('../images/cni-pho-account-takeover.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .jumbotron h2{
     font-size: 7em;
 }
