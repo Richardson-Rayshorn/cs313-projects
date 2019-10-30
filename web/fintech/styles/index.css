@@ -7,7 +7,7 @@ nav ul a, nav .brand-logo{
 }
 
 .jumbotron{
-    background-image:url('../images/cni-pho-account-takeover.jpg');
+    background-image:url('../../images/fintech-images/cni-pho-account-takeover.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -29,3 +29,8 @@ nav ul a, nav .brand-logo{
 .input-field input[type=search] ~ .material-icons{
     color: black !important;
 }
+
+/* right: 127px;
+    width: 20%;
+    top: 5px;
+    z-index: 5; */

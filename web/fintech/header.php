@@ -23,14 +23,17 @@ $link = htmlspecialchars("./business.php");
     </head>
     <body>
   <header>
-    <div class="input-field">
-      <input type="search" required>
-    </div>
+    
     <nav>
       <div class="nav-wrapper white">
         <a href="#!" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><i id="searchId" class="material-icons left">search</i></li>
+          <li>
+            <div class="input-field">
+                <input type="search" required>
+                <i id="searchId" class="material-icons left">search</i>
+            </div>
+          </li>
           <li><a href="./signup">Signup</a></li>
         </ul>
       </div>
