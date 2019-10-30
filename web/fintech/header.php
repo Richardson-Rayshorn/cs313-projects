@@ -30,7 +30,7 @@ $link = htmlspecialchars("./business.php");
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <div class="input-field row">
-                <input type="search" required class="col sm9">
+                <input id="searchbox" type="search" required class="col sm9">
                 <i id="searchId" class="material-icons left col sm4">search</i>
             </div>
           </li>

@@ -30,7 +30,10 @@ nav ul a, nav .brand-logo{
     color: black !important;
 }
 
-/* right: 127px;
-    width: 20%;
-    top: 5px;
-    z-index: 5; */
+#searchbox{
+    top: 23px !important;
+    position: relative !important;
+    padding-left: 0px !important;
+    width: 100% !important;
+    left: -72px !important;
+}
