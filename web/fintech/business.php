@@ -2,7 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
-$link = htmlspecialchars("./business-details.php");
+$links = htmlspecialchars("./business-details.php");
 $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
@@ -29,11 +29,12 @@ include_once "main.php";
         <h2>Search Results</h2>';
         foreach ($business as $rows)
         {
+            echo $rows['institutions.id'];
             if ($business_name == $rows['company_name'])
             {
                 echo '<div class="col sm12 m6 l6">
                     <form method="POST" action"';
-                        echo $link; echo'">
+                        echo $links; echo'">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
                         echo '" name="compId"/>
@@ -59,7 +60,7 @@ include_once "main.php";
             {
                 echo '<div class="col sm12 m6 l6">
                     <form method="POST" action"';
-                        echo $link; echo'">
+                        echo $links; echo'">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
                         echo '" name="compId"/>
