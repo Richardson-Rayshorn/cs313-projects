@@ -2,6 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
+$link = htmlspecialchars("./business-details.php");
 $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
@@ -11,7 +12,7 @@ include_once "main.php";
     $business_name = $_GET["biz"];
     
     $query = $db->prepare('SELECT types_name, offerings_name,
-    company_name, company_description
+    company_name, company_description, institutions.id
     FROM ((((institute_types
     INNER JOIN types ON institute_types.types_id = types.id)
     INNER JOIN institutions ON institute_types.institutions_id = institutions.id)
@@ -30,40 +31,52 @@ include_once "main.php";
         {
             if ($business_name == $rows['company_name'])
             {
-                echo '<div class="col sm12">
-                    <h5>';
-                    echo $rows['company_name'];
-                    echo '</h5>
-                    <p> <span> Description</span> <br/>';
-                    echo $rows['company_description'];
-                    echo '</p>
-                    <p> <span> Business type</span> <br/>';
-                    echo $rows['types_name'];
-                    echo '</p>
-                    <p> <span> Offerings</span> <br/>';
-                    echo $rows['offerings_name'];
-                    echo '</p>
-                    <a class="btn" onClick="">Learn More</a>
+                echo '<div class="col sm12 m6 l6">
+                    <form method="POST" action"';
+                        echo $link; echo'">
+                        <input type="hidden" value="'; 
+                        echo $rows['institutions.id'];
+                        echo '" name="compId"/>
+                        <h5>';
+                        echo $rows['company_name'];
+                        echo '</h5>
+                        <p> <span> Description</span> <br/>';
+                        echo $rows['company_description'];
+                        echo '</p>
+                        <p> <span> Business type</span> <br/>';
+                        echo $rows['types_name'];
+                        echo '</p>
+                        <p> <span> Offerings</span> <br/>';
+                        echo $rows['offerings_name'];
+                        echo '</p>
+                        <input class="btn" type="submit" value="Learn More">
+                    </form>
                 </div>';
             }
             elseif ($type == $rows['types_name'] && 
                     $offering == $rows['offerings_name']
                     )
             {
-                echo '<div class="col sm12">
-                    <h5>';
-                    echo $rows['company_name'];
-                    echo '</h5>
-                    <p> <span> Description</span> <br/>';
-                    echo $rows['company_description'];
-                    echo '</p>
-                    <p> <span> Business type</span> <br/>';
-                    echo $rows['types_name'];
-                    echo '</p>
-                    <p> <span> Offerings</span> <br/>';
-                    echo $rows['offerings_name'];
-                    echo '</p>
-                    <a class="btn" onClick="">Learn More</a>
+                echo '<div class="col sm12 m6 l6">
+                    <form method="POST" action"';
+                        echo $link; echo'">
+                        <input type="hidden" value="'; 
+                        echo $rows['institutions.id'];
+                        echo '" name="compId"/>
+                        <h5>';
+                        echo $rows['company_name'];
+                        echo '</h5>
+                        <p> <span> Description</span> <br/>';
+                        echo $rows['company_description'];
+                        echo '</p>
+                        <p> <span> Business type</span> <br/>';
+                        echo $rows['types_name'];
+                        echo '</p>
+                        <p> <span> Offerings</span> <br/>';
+                        echo $rows['offerings_name'];
+                        echo '</p>
+                        <input class="btn" type="submit" value="Learn More">
+                    </form>
                 </div>';
             }
         }
