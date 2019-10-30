@@ -27,7 +27,7 @@
   <header>
     <nav>
       <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo left">FundMind</a>
+        <a href="#!" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a href="./';
