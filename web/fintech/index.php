@@ -6,7 +6,7 @@ include_once "header.php";
         <section class="jumbotron">
             <section>
                 <h2>FUND YOUR FUTURE.</h2>
-                <p>Find the right financial aid for you</p>
+                <p>Find the right financial aid for your needs.</p>
                 <a class="btn" href="./search.php">Learn More</a>
             </section>
         </section>
