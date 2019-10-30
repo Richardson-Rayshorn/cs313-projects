@@ -23,6 +23,7 @@ include_once "header.php";
     echo '<div class="row">
         <!-- Displays the businesses that match
         the search -->
+        <a id="back">Return to Search</a>
         <h2>Search Results</h2>';
         foreach ($business as $rows)
         {

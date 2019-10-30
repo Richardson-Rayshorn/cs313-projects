@@ -23,7 +23,6 @@ $link = htmlspecialchars("./business.php");
     </head>
     <body>
   <header>
-    
     <nav>
       <div class="nav-wrapper white">
         <a href="./" class="brand-logo left">FundMine</a>
@@ -37,6 +36,7 @@ $link = htmlspecialchars("./business.php");
             </div>
           </li>
           <li><a href="./signup.php">Signup</a></li>
+          <li><a href="#">Login</a></li>
         </ul>
       </div>
     </nav>
