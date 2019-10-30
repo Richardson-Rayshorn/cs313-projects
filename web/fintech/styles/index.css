@@ -10,10 +10,17 @@ nav ul a, nav .brand-logo{
     background-image:url('../../images/fintech-images/cni-pho-account-takeover.jpg');
     background-position: center;
     background-size: cover;
+    height: 500px;
+}
+
+.jumbotron section{
+    position: relative;
+    top: 5em;
 }
 
 .jumbotron h2{
     font-size: 7em;
+    margin-top: 0;
 }
 
 .jumbotron p{
