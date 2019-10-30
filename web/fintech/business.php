@@ -7,8 +7,8 @@ include_once "header.php";
 
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
-    $_SESSION["business_name"] = $_GET["biz"];
-    echo $_SESSION["business_name"];
+    $business_name = $_GET["biz"];
+    
     $query = $db->prepare('SELECT types_name, offerings_name,
     company_name, company_description
     FROM ((((institute_types
@@ -20,12 +20,13 @@ include_once "header.php";
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
-    echo '<div id="ajax" class="row">
+    echo '<div class="row">
         <!-- Displays the businesses that match
-        the search -->';
+        the search -->
+        <h2>Search Results</h2>';
         foreach ($business as $rows)
         {
-            if ($_SESSION["business_name"] == $rows['company_name'])
+            if ($business_name == $rows['company_name'])
             {
                 echo '<div class="col sm12">
                     <h5>';
