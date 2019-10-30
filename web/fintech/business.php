@@ -25,9 +25,27 @@ include_once "header.php";
         the search -->';
         foreach ($business as $rows)
         {
-            if ($type == $rows['types_name'] && 
-                    $offering == $rows['offerings_name'] ||
-                    $_SESSION["business_name"] == $rows['company_name'])
+            if ($_SESSION["business_name"] == $rows['company_name'])
+            {
+                echo '<div class="col sm12">
+                    <h5>';
+                    echo $rows['company_name'];
+                    echo '</h5>
+                    <p> <span> Description</span> <br/>';
+                    echo $rows['company_description'];
+                    echo '</p>
+                    <p> <span> Business type</span> <br/>';
+                    echo $rows['types_name'];
+                    echo '</p>
+                    <p> <span> Offerings</span> <br/>';
+                    echo $rows['offerings_name'];
+                    echo '</p>
+                    <a class="btn" onClick="">Learn More</a>
+                </div>';
+            }
+            elseif ($type == $rows['types_name'] && 
+                    $offering == $rows['offerings_name']
+                    )
             {
                 echo '<div class="col sm12">
                     <h5>';
