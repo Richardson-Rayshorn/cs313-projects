@@ -23,10 +23,9 @@ $link = htmlspecialchars("./business.php");
     </head>
     <body>
   <header>
-      <div id="dropdown1" class="dropdown-content input-field">
-        <input id="search" type="search" required>
-        <i class="material-icons">close</i>
-      </div>
+    <div id="dropdown1" class="dropdown-content input-field">
+      <input type="search" required>
+    </div>
     <nav>
       <div class="nav-wrapper white">
         <a href="#!" class="brand-logo left">FundMine</a>
