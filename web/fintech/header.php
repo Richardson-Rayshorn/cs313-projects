@@ -27,8 +27,8 @@
   <header>
     <nav>
       <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo">FundMind</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">';
+        <a href="#!" class="brand-logo left">FundMind</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">';
         for($i = 0; $i < $arr_length; $i++) {
           echo '<li><a href="./';
           echo $menu_links[$i];
