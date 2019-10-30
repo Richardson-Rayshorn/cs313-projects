@@ -33,7 +33,7 @@ include_once "main.php";
             if ($business_name == $rows['company_name'])
             {
                 echo '<div class="col sm12 m6 l6">
-                    <form method="POST" action"';
+                    <form method="GET" action"';
                         echo $links; echo'">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
@@ -59,7 +59,7 @@ include_once "main.php";
                     )
             {
                 echo '<div class="col sm12 m6 l6">
-                    <form method="POST" action"';
+                    <form method="GET" action"';
                         echo $links; echo'">
                         <input type="hidden" value="'; 
                         echo $rows['institutions.id'];
