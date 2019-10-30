@@ -29,9 +29,9 @@ $link = htmlspecialchars("./business.php");
         <a href="#!" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <div class="input-field">
-                <input type="search" required>
-                <i id="searchId" class="material-icons left">search</i>
+            <div class="input-field row">
+                <input type="search" required class="col sm9">
+                <i id="searchId" class="material-icons left col sm4">search</i>
             </div>
           </li>
           <li><a href="./signup">Signup</a></li>
