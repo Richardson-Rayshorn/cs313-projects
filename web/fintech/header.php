@@ -26,7 +26,7 @@ $link = htmlspecialchars("./business.php");
     
     <nav>
       <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo left">FundMine</a>
+        <a href="./" class="brand-logo left">FundMine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <div class="input-field row">
