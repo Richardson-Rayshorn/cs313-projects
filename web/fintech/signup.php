@@ -2,7 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
-
+$title = "Signup";
 include_once "header.php";
 
 // error_reporting(E_ALL);
