@@ -1,9 +1,9 @@
 <?php 
     echo '
     </main>
-    <footer>
+    <footer class="grey darken-4">
       <div class="container">
-        <nav class="grey darken-4">
+        <nav>
           <ul>';
           for($i = 0; $i < $arr_length; $i++) {
             echo '<li><a class="anchorTag" id="'; 
