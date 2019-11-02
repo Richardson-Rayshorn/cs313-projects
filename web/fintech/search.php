@@ -71,13 +71,13 @@ include_once "main.php";
                 <h5>';
                 echo $rows['company_name'];
                 echo '</h5>
-                <p> <span> Description</span> <br/>';
+                <p> <span class="bold"> Description</span> <br/>';
                 echo $rows['company_description'];
                 echo '</p>
-                <p> <span> Business type</span> <br/>';
+                <p> <span class="bold"> Business type</span> <br/>';
                 echo $rows['types_name'];
                 echo '</p>
-                <p> <span> Offerings</span> <br/>';
+                <p> <span class="bold"> Offerings</span> <br/>';
                 echo $rows['offerings_name'];
                 echo '</p>
                 <a class="btn" onClick="">Learn More</a>

@@ -2,6 +2,11 @@ body {
     background: #fbf9f9;
 }
 
+.bold{
+    font:17px;
+    font-weight:700 ;
+}
+
 *{
     box-sizing: border-box;
 }
