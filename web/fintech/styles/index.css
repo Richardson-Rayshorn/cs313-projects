@@ -1,3 +1,11 @@
+body {
+    background: #fbf9f9;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 nav ul a, nav .brand-logo{
     color:black !important;
 }
