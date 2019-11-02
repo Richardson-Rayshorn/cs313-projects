@@ -36,7 +36,7 @@ $link = htmlspecialchars("./business.php");
             </div>
           </li>
           <li><a href="./signup.php">Signup</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="./login.php">Login</a></li>
         </ul>
       </div>
     </nav>
