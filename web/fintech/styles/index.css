@@ -6,6 +6,13 @@ body {
     box-sizing: border-box;
 }
 
+main{
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 11px;
+    background: white;
+}
+
 nav ul a, nav .brand-logo{
     color:black !important;
 }
