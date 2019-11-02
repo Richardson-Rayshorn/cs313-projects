@@ -3,8 +3,8 @@
     </main>
     <footer class="grey darken-4">
       <div class="container">
+        <a href="./" class="brand-logo left">FundMine</a>
         <div id="footer-nav" class="row">
-          <a href="./" class="brand-logo left">FundMine</a>
           <div class="col sm12 m6 l6">
             <ul>
               <li>Signup</li>
