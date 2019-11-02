@@ -7,7 +7,7 @@ body {
 }
 
 main{
-    margin: 1em auto;
+    margin: 1em auto !important;
     padding: 2em;
     border-radius: 11px;
     background: white;
