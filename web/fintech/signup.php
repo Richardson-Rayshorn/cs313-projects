@@ -2,7 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
-$title = "Signup";
+$page = $title = "Signup";
 include_once "header.php";
 include_once "main.php";
 
