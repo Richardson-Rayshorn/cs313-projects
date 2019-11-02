@@ -67,7 +67,7 @@ include_once "main.php";
         the search -->';
         foreach ($business as $rows)
         {
-            echo '<div class="col sm12">
+            echo '<div class="col sm12 m6 l6">
                 <h5>';
                 echo $rows['company_name'];
                 echo '</h5>
