@@ -60,7 +60,7 @@ include_once "main.php";
         <input type="submit" class="btn" value="Search">
     </form>';
 
-    echo '\
+    echo '
         <h4>List of businesses</h4>
         <div class="row">
         <!-- Displays the businesses that match
