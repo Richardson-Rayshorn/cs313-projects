@@ -3,7 +3,7 @@
     </main>
     <footer class="grey darken-4">
       <div class="container">
-        <a href="./" class="brand-logo left">FundMine</a>
+        <a href="./" class="brand-logo left footer-logo">FundMine</a>
         <div id="footer-nav" class="row">
           <div class="col sm12 m6 l6">
             <ul>
