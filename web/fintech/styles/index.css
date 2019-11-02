@@ -18,8 +18,15 @@ main{
     background: white;
 }
 
-nav ul a, nav .brand-logo{
+nav ul a, .brand-logo{
     color:black !important;
+}
+
+.brand-logo{
+    position: absolute;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0
 }
 
 #back{
