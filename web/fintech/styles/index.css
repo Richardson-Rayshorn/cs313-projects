@@ -76,3 +76,7 @@ header nav .nav-wrapper{
     margin: auto !important;
     max-width: 1260px !important;
 }
+
+footer{
+    color:white !important;
+}
