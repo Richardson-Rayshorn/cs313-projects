@@ -21,7 +21,7 @@ $link = htmlspecialchars("./business.php");
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <title>'; echo $title; echo ' | Fintech</title>
     </head>
-    <body class="'; echo $page; echo'>
+    <body class="'; echo $page; echo'">
   <header class="white">
     <nav class="white">
       <div class="nav-wrapper">
