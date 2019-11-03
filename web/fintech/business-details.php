@@ -7,8 +7,6 @@ $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
 
-echo $_GET['compId'];
-
 $query = $db->prepare('SELECT company_name, company_description, 
     primary_contact_person, phone_number, company_address
     FROM institutions');
