@@ -2,6 +2,7 @@
 session_start();
 require_once("dbConnect.php");
 $db = get_db();
+$page = $title = "Admin";
 
 include_once "header.php";
 include_once "main.php";
