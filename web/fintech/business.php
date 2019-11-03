@@ -80,7 +80,7 @@ include_once "main.php";
                     </form>
                 </div>';
             }
-            else 
+            else if($business_name != $rows['company_name']) 
             {
                 echo '<h4>There isn\'t a match</h4>';
             }
