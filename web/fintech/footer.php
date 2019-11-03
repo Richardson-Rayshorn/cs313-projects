@@ -13,8 +13,8 @@
           </div>
           <div class="col sm12 m6 l6">
             <ul>
-              <li>Signup</li>
-              <li>Login</li>
+              <li>About Us</li>
+              <li>Contact</li>
             </ul>
           </div>
         </div>
