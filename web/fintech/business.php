@@ -6,7 +6,7 @@ $db = get_db();
 $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
-
+    $test = false;
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
     $business_name = $_GET["biz"];
@@ -29,7 +29,6 @@ include_once "main.php";
         <h2>Search Results</h2>';
         foreach ($business as $rows)
         {
-            echo $rows['institutions.id'];
             if ($business_name == $rows['company_name'])
             {
                 echo '<div class="col sm12 m6 l6">
@@ -82,8 +81,12 @@ include_once "main.php";
             }
             else if($business_name != $rows['company_name']) 
             {
-                echo '<h4>There isn\'t a match</h4>';
+                $test = true;
             }
+        }
+        if ($test == true)
+        {
+            echo '<h5>No business found</h5>';
         }
     echo '</div>';
 
