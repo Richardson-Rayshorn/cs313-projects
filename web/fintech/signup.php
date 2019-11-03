@@ -114,8 +114,12 @@ include_once "main.php";
                 <label for="background">Tell us about yourself</label>
             </div>
         </div>
-        <input type="submit" class="btn" name="submit">
-    </form>';
+        <input type="submit" class="btn" name="submit" value="Register">
+    </form>
+    
+    <div> 
+        <p>If you have an account you can <a href="./login.php">Login Here</a></p>
+    </div>';
 
 include_once "footer.php";
 ?>
