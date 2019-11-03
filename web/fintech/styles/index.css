@@ -23,7 +23,6 @@ nav ul a, .brand-logo{
 }
 
 .brand-logo{
-    position: absolute;
     display: inline-block;
     font-size: 2.1rem;
     padding: 0
@@ -95,5 +94,5 @@ footer{
 }
 
 .footer-logo{
-    color: white;
+    color: white !important;
 }
