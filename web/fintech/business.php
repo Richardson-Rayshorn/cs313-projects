@@ -6,7 +6,7 @@ $db = get_db();
 $title = "Business Listing";
 include_once "header.php";
 include_once "main.php";
-    $test = false;
+    $test = 0;
     $type = $_GET["types"];
     $offering = $_GET["offerings"];
     $business_name = $_GET["biz"];
@@ -52,6 +52,7 @@ include_once "main.php";
                         <input class="btn" type="submit" value="Learn More">
                     </form>
                 </div>';
+                $test++;
             }
             elseif ($type == $rows['types_name'] && 
                     $offering == $rows['offerings_name']
@@ -78,13 +79,11 @@ include_once "main.php";
                         <input class="btn" type="submit" value="Learn More">
                     </form>
                 </div>';
+                $test++;
             }
-            else if($business_name != $rows['company_name']) 
-            {
-                $test = true;
-            }
+        
         }
-        if ($test == true)
+        if ($test == 0)
         {
             echo '<h5>No business found</h5>';
         }
