@@ -15,6 +15,11 @@ $query = $db->prepare('SELECT company_name, company_description,
 $query->execute();
 $business = $query->fetchAll(PDO::FETCH_ASSOC);
 
+echo '<div>
+        <!-- Displays the businesses that match
+        the search -->
+        <a id="back" href="./search.php">Return to Search</a>
+        <h2>Business Profile</h2>';
 foreach ($business as $rows)
 {
     if($_GET['compId'] == $rows['company_name'])
@@ -42,5 +47,6 @@ foreach ($business as $rows)
         </div>';
     }
 }
+echo '</div>';
 
 include_once "footer.php"; ?>
