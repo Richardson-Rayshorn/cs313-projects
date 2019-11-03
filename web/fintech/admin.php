@@ -10,7 +10,7 @@ include_once "main.php";
 // ini_set("display_errors", 1);
 
     $first_name = $last_name = $email = $username = $password = "";
-    $password_valid = $address = $number = $background = "";
+    $password_valid = $address = $number = "";
 
 
     if(isset($_POST['submit']))
@@ -23,7 +23,6 @@ include_once "main.php";
         $password_valid = htmlspecialchars($_POST['password_valid']);
         $address = htmlspecialchars($_POST['address']);
         $number = htmlspecialchars($_POST['number']);
-        $background = htmlspecialchars($_POST['background']);
 
         $user = $db->prepare('SELECT id, email FROM users');
         $user->execute();
@@ -35,14 +34,13 @@ include_once "main.php";
             {
                 $id = $rows['id'];
                 $user_update = $db->prepare("UPDATE users SET first_name=:first_name, last_name=:last_name,
-                user_password=:user_password, user_address=:user_address, background=:background,
+                user_password=:user_password, user_address=:user_address,
                 phone_number=:phone_number, roles=:roles WHERE id=$id");
 
                 $user_update->bindValue(':first_name', $first_name, PDO::PARAM_STR);
                 $user_update->bindValue(':last_name', $last_name, PDO::PARAM_STR);
                 $user_update->bindValue(':user_password', $password, PDO::PARAM_STR);
                 $user_update->bindValue(':user_address', $address, PDO::PARAM_STR);
-                $user_update->bindValue(':background', $background, PDO::PARAM_STR);
                 $user_update->bindValue(':phone_number', $number, PDO::PARAM_STR);
                 $user_update->bindValue(':roles', "users", PDO::PARAM_STR);
                 $user_update->execute();
@@ -103,11 +101,6 @@ echo '
                 <input id="number" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="number">
                 <span id="numberErr" class="error">*</span>
                 <label for="number">Telephone Number</label>
-            </div>
-            <div class="input-field col s6">
-                <textarea name="background" id="background" cols="30" rows="10"></textarea>
-                <span id="backgroundErr" class="error">*</span>
-                <label for="background">Tell us about yourself</label>
             </div>
         </div>
         <input type="submit" class="btn" name="submit">
