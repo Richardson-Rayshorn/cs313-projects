@@ -96,3 +96,7 @@ footer{
 .footer-logo{
     color: white !important;
 }
+
+#copyright{
+    text-align: center;
+}
