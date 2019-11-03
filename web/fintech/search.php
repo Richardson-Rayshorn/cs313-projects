@@ -24,6 +24,7 @@ include_once "main.php";
     $business = $query->fetchAll(PDO::FETCH_ASSOC);
     echo $_SESSION["business_name"];
     $link = htmlspecialchars("./business.php");
+    $links = htmlspecialchars("./business-details.php");
     echo '
     <h3>Search</h3>
     <form method="GET" action="'; echo $link; echo '">
@@ -68,6 +69,11 @@ include_once "main.php";
         foreach ($business as $rows)
         {
             echo '<div class="col sm12 m6 l6">
+            <form method="GET" action="';
+                echo $links; echo'">
+                <input type="hidden" value="'; 
+                echo $rows['company_name'];
+                echo '" name="compId"/>
                 <h5>';
                 echo $rows['company_name'];
                 echo '</h5>
@@ -80,8 +86,9 @@ include_once "main.php";
                 <p> <span class="bold"> Offerings</span> <br/>';
                 echo $rows['offerings_name'];
                 echo '</p>
-                <a class="btn" onClick="">Learn More</a>
-            </div>';
+                <input class="btn" type="submit" value="Learn More">
+            </form>
+        </div>';
         }
     echo '</div>';
 
