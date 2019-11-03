@@ -80,6 +80,10 @@ include_once "main.php";
                     </form>
                 </div>';
             }
+            else 
+            {
+                echo '<h4>There isn\'t a match</h4>';
+            }
         }
     echo '</div>';
 
