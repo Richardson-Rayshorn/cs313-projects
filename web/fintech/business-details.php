@@ -3,7 +3,7 @@ session_start();
 require_once("dbConnect.php");
 $db = get_db();
 
-$title = "Business Listing";
+$page = $title = "Business-Profile";
 include_once "header.php";
 include_once "main.php";
 
